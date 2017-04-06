@@ -1,4 +1,4 @@
-# Styleguide-SatsElixia
+# Styleguide-FreshFitness
 
 Based on Brett Jankord's [Style Guide Boilerplate](http://brettjankord.com/projects/style-guide-boilerplate/)
 
