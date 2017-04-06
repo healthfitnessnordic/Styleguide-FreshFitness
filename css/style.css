@@ -1,19 +1,13 @@
- @import url("https://hfnstyle.herokuapp.com/bundles/styles/css.css");
+ @import url("https://www.freshfitness.no/FreshFitness/Public/css/main.css?v=0406053614");
 
  body {
-  font-family: "HelveticaNeue", "Helvetica", Arial, sans-serif;
+
 }
 
 img, svg, video, audio {
   
 }
-@font-face {
-    font-family: 'sats-icons';
-    src: url(/../fonts/sats-icons/sats-icons.eot);
-    src: url('../fonts/sats-icons/sats-icons.eot?#iefix') format('embedded-opentype'), url('../fonts/sats-icons/sats-icons.woff') format('woff'), url('../fonts/sats-icons/sats-icons.ttf') format('truetype'), url('../fonts/sats-icons/sats-icons.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../fonts/glyphicons/glyphicons-halflings-regular.eot');
@@ -24,28 +18,63 @@ img, svg, video, audio {
        url('../fonts/glyphicons/glyphicons-halflings-regular.svg') format('svg');
 }
 @font-face {
-  font-family: 'GuardianEgyptianWeb';
-  src: url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Light.eot');
-  src: url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Light.woff') format('woff'),
-  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Light.ttf') format('truetype'),
-  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Light.svg#GuardianEgyptianWeb') format('svg');
+  font-family: 'stratos';
+  src: url('../fonts/stratos/stratosweb-regular.eot');
+  src: url('../fonts/stratos/stratosweb-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/stratos/stratosweb-regular.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
-  font-family: 'GuardianEgyptianWeb';
-  src: url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Medium.eot');
-  src: url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Medium.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Medium.woff') format('woff'),
-  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Medium.ttf') format('truetype'),
-  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Medium.svg#GuardianEgyptianWeb') format('svg');
+  font-family: 'stratos';
+  src: url('../fonts/stratos/stratosweb-lightitalic.eot');
+  src: url('../fonts/stratos/stratosweb-lightitalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/stratos/stratosweb-lightitalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'stratos';
+  src: url('../fonts/stratos/stratosweb-medium.eot');
+  src: url('../fonts/stratos/stratosweb-medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/stratos/stratosweb-medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
 }
+@font-face {
+  font-family: 'ClearSans';
+  src: url('../fonts/clear-sans/ClearSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/clear-sans/ClearSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/clear-sans/ClearSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/clear-sans/ClearSans-Regular.ttf')  format('truetype'),
+       url('../fonts/clear-sans/ClearSans-Regular.svg#webfont')  format('svg'); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'ClearSans';
+  src: url('../fonts/clear-sans/ClearSans-Italic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/clear-sans/ClearSans-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/clear-sans/ClearSans-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/clear-sans/ClearSans-Italic.ttf')  format('truetype'),
+       url('../fonts/clear-sans/ClearSans-Italic.svg#webfont')  format('svg'); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ClearSans';
+  src: url('../fonts/clear-sans/ClearSans-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/clear-sans/ClearSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/clear-sans/ClearSans-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/clear-sans/ClearSans-Bold.ttf')  format('truetype'),
+       url('../fonts/clear-sans/ClearSans-Bold.svg#webfont')  format('svg'); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}
 
 

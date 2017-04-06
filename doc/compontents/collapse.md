@@ -1,1 +1,0 @@
-To get proper styling wrap panel group in `.customer-service`.

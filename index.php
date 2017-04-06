@@ -3,7 +3,7 @@
 <html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
-  <title>Styleguide SATS ELIXIA</title>
+  <title>Styleguide Fresh Fitness</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#000000">
 
@@ -39,21 +39,21 @@
 
       <?php listFilesInFolder('markup'); ?>
     </div><!--/.sg-sidebar-->
-
-    <div id="main" class="sg-main container" role="main">
-        <div id="top" class="sg-header" role="banner">
+<div id="top" class="sg-header" role="banner">
     <div class="sg-container">
-      <h1 class="sg-logo"><img src="https://www.satselixia.no/Images/SATS/logo-no.svg" />
+      <h1 class="sg-logo"><img src="https://www.freshfitness.no/Images/FreshFitness/logo-no.svg" />
         <span class="sg-logo-full">STYLE GUIDE</span>
       </h1>
       <button type="button" class="sg-nav-toggle">Menu</button>
     </div>
   </div><!--/.sg-header-->
+    <div id="main" class="sg-main container" role="main">
+    
       <div class="sg-container">
         <div class="sg-info">
           <div class="sg-about sg-section">
             <h2 id="sg-about" class="sg-h2">Intro</h2>
-            <p>Bootstrapped style guide for Sats/Elixia. More patterns and detailed documentation will come.</p>
+            <p>Bootstrapped style guide for Fresh Fitness. More patterns and detailed documentation will come.</p>
             <p>Variables (less) marked with prefix @. To view source code click the View source button below the elements.</p>
             <p>If you have any questions contact Svein Erik at Making Waves.</p>
           </div><!--/.sg-about-->
@@ -64,46 +64,10 @@
             <div class="sg-color-grid">
               <div class="sg-color">
                 <div class="sg-color-swatch" style="background-color: #333333;"></div>
-                <div class="sg-color-name">@sats-black-color</div>
+                <div class="sg-color-name">@black-color</div>
                 <div class="sg-color-value">#333333</div>
               </div>
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #4b186c;"></div>
-                <div class="sg-color-name">@sats-purple-color</div>
-                <div class="sg-color-value">#4b186c</div>
-              </div>
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #ee0974;"></div>
-                <div class="sg-color-name">@sats-pink-color</div>
-                <div class="sg-color-value">#ee0974</div>
-              </div>
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #95d600;"></div>
-                <div class="sg-color-name">@sats-green-color</div>
-                <div class="sg-color-value">#95d600</div>
-              </div>
-            </div><!--/.sg-color-grid-->
-            <div class="sg-color-grid">
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #d8d8d8;"></div>
-                <div class="sg-color-name">@sats-grey-color</div>
-                <div class="sg-color-value">#d8d8d8</div>
-              </div>
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #e6e6e2;"></div>
-                <div class="sg-color-name">@sats-warm-grey-color</div>
-                <div class="sg-color-value">#e6e6e2</div>
-              </div>
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #f3f3f3;"></div>
-                <div class="sg-color-name">@sats-light-grey-color</div>
-                <div class="sg-color-value">#f3f3f3</div>
-              </div>
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #e6e6e6;"></div>
-                <div class="sg-color-name">@sats-whitesmoke-color</div>
-                <div class="sg-color-value">#e6e6e6</div>
-              </div>
+              
             
             </div><!--/.sg-color-grid-->
           </div><!--/.sg-colors-->
@@ -112,20 +76,23 @@
           <div class="sg-font-stacks sg-section">
             <h2 id="sg-fontStacks" class="sg-h2">Font Stacks</h2>
             <dl class="sg-font-list">
-              <dt>Body Font (@font-family-sans-serif):</dt>
-              <dd style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
+              <dt>Body Font (@ff-body-family):</dt>
+              <dd style='font-family: "ClearSans", sans-serif;'>"ClearSans", sans-serif;</dd>
 
               <dt>Body Font Italic:</dt>
-              <dd style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; font-style: italic;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
+              <dd style='font-family: "ClearSans", sans-serif; font-style: italic;'>"ClearSans", sans-serif;</dd>
 
               <dt>Body Font Bold:</dt>
-              <dd style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; font-weight: 800;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
+              <dd style='font-family: "ClearSans", sans-serif; font-weight: 700;'>"ClearSans", sans-serif;</dd>
 
-              <dt>Heading Font (@font-family-serif):</dt>
-              <dd style='font-family: "GuardianEgyptianWeb", Times, "Times New Roman", serif; font-weight: 300'>GuardianEgyptianWeb, Times, "Times New Roman", serif;</dd>
+              <dt>Heading Font (@ff-heading-family):</dt>
+              <dd style='font-family: "stratos", sans-serif; font-weight: 300;'>"stratos", sans-serif;</dd>
 
               <dt>Heading Font Bold:</dt>
-              <dd style='font-family: "GuardianEgyptianWeb", Times, "Times New Roman", serif; font-weight: 500;'>GuardianEgyptianWeb, Times, "Times New Roman", serif;</dd>
+              <dd style='font-family: "stratos", sans-serif; font-weight: 500;'>"stratos", sans-serif;</dd>
+
+              <dt>Heading Font Light Italic:</dt>
+              <dd style='font-family: "stratos", sans-serif; font-weight: 300; font-style: italic'>"stratos", sans-serif;</dd>
             </dl>
             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
           </div><!--/.sg-font-stacks-->
@@ -140,8 +107,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/sg-scripts.js"></script>
   <script src="js/modernizr-custom.js"></script>
-  <script src="https://hfnstyle.herokuapp.com/bundles/js-external.js"></script>
-  <script src="https://hfnstyle.herokuapp.com/bundles/js-internal.js"></script>
+ 
 
 </body>
 </html>

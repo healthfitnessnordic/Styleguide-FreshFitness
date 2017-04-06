@@ -25,14 +25,15 @@ body {
 }
 
 .sg-header {
-  background: #000;
+  background: #e5231b;
   color: #fff;
   padding-bottom: 2rem;
   padding-top: 1.5rem;
   margin-bottom: 2rem;
 }
 .sg-header img {
-  max-height: 2rem;
+  width: auto;
+  height: 4rem;
   margin-right: 1rem;
 }
 
@@ -95,10 +96,10 @@ body {
     width: 22rem;
   }
 
-  .sg-main {
+  .sg-main, .sg-header {
     margin-left: 20rem !important;
     padding-left: 2rem !important;
-     max-width: calc(100% - 20rem);
+    max-width: calc(100% - 20rem);
   }
 }
 
@@ -169,7 +170,6 @@ body {
 .sg-h3,
 .sg-color-name,
 .sg-font-list dt  {
-  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    font-weight: 500;
 }
 
@@ -198,6 +198,11 @@ body {
 
   .sg-logo-full {
     display: inline;
+    font-size: 2.5rem;
+    line-height: 1;
+    position: relative;
+    bottom: -1rem;
+    font-weight: 300;
   }
 }
 
@@ -280,7 +285,7 @@ body {
 .sg-h3 {
   margin-bottom: 1em;
   margin-top: 0;
-  font-family: "GuardianEgyptianWeb";
+  font-family: "stratos";
 }
 
 .sg-h1 {
@@ -335,7 +340,6 @@ h1 + .sg-hash-link {
 .sg-enhanced .sg-btn--source {
   display: block;
   font-family: Menlo, monospace;
-  font-size: 1.25rem;
 }
 
 @media screen and (min-width: 1025px) {
