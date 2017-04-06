@@ -1,0 +1,51 @@
+ @import url("https://hfnstyle.herokuapp.com/bundles/styles/css.css");
+
+ body {
+  font-family: "HelveticaNeue", "Helvetica", Arial, sans-serif;
+}
+
+img, svg, video, audio {
+  
+}
+@font-face {
+    font-family: 'sats-icons';
+    src: url(/../fonts/sats-icons/sats-icons.eot);
+    src: url('../fonts/sats-icons/sats-icons.eot?#iefix') format('embedded-opentype'), url('../fonts/sats-icons/sats-icons.woff') format('woff'), url('../fonts/sats-icons/sats-icons.ttf') format('truetype'), url('../fonts/sats-icons/sats-icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/glyphicons/glyphicons-halflings-regular.woff2') format('woff2'),
+       url('../fonts/glyphicons/glyphicons-halflings-regular.woff') format('woff'),
+       url('../fonts/glyphicons/glyphicons-halflings-regular.ttf') format('truetype'),
+       url('../fonts/glyphicons/glyphicons-halflings-regular.svg') format('svg');
+}
+@font-face {
+  font-family: 'GuardianEgyptianWeb';
+  src: url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Light.eot');
+  src: url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Light.woff') format('woff'),
+  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Light.ttf') format('truetype'),
+  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Light.svg#GuardianEgyptianWeb') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'GuardianEgyptianWeb';
+  src: url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Medium.eot');
+  src: url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Medium.woff') format('woff'),
+  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Medium.ttf') format('truetype'),
+  url('../fonts/guardian-egyptian-web/GuardianEgyptianWeb-Medium.svg#GuardianEgyptianWeb') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
+

@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+  <title>Styleguide SATS ELIXIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Style Guide Boilerplate Styles -->
+  <link rel="stylesheet" href="css/sg-style.css">
+  <!--[if lt IE 9]><link rel="stylesheet" href="css/sg-style-old-ie.css"><![endif]-->
+
+  <!-- https://github.com/sindresorhus/github-markdown-css -->
+  <link rel="stylesheet" href="css/github-markdown.css">
+
+  <!-- Replace below stylesheet with your own stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- prism Syntax Highlighting Styles -->
+  <link rel="stylesheet" href="vendor/prism/prism.css">
+</head>
+<body>
+  <a href="#main" class="sg-visually-hidden sg-visually-hidden-focusable">Skip to main content</a>
+
+
+
+  <div class="sg-wrapper sg-clearfix">
+    <div id="nav" class="sg-sidebar" role="navigation">
+      <h3 class="sg-h2 sg-subnav-title">General</h3>
+      <ul class="sg-nav-group">
+        <li>
+          <a href="#sg-about">Intro</a>
+        </li>
+        <li>
+          <a href="#sg-colors">Colors</a>
+        </li>
+        <li>
+          <a href="#sg-fontStacks">Fonts</a>
+        </li>
+      </ul>
+
+      <ul class="sg-nav-group"><li class="sg-subnav-parent"><h3 id="sg-markup-base" class="sg-h3 sg-title">base</h3><a class="sg-hash-link" href="#sg-markup-base"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><ul class="sg-nav-group"><li><a href="#sg-markup-base-buttons-html">buttons</a></li><li><a href="#sg-markup-base-forms-html">forms</a></li><li><a href="#sg-markup-base-headings-html">headings</a></li><li><a href="#sg-markup-base-hr-html">hr</a></li><li><a href="#sg-markup-base-media-html">media</a></li><li><a href="#sg-markup-base-tables-html">tables</a></li><li><a href="#sg-markup-base-text-elements-html">text elements</a></li></ul></li><li class="sg-subnav-parent"><h3 id="sg-markup-compontents" class="sg-h3 sg-title">compontents</h3><a class="sg-hash-link" href="#sg-markup-compontents"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><ul class="sg-nav-group"><li><a href="#sg-markup-compontents-Cards-default-html">Cards default</a></li><li><a href="#sg-markup-compontents-Cards-news-html">Cards news</a></li><li><a href="#sg-markup-compontents-breadcrumbs-html">breadcrumbs</a></li><li><a href="#sg-markup-compontents-button-list-html">button list</a></li><li><a href="#sg-markup-compontents-collapse-html">collapse</a></li><li><a href="#sg-markup-compontents-hero-html">hero</a></li></ul></li></ul>    </div><!--/.sg-sidebar-->
+
+    <div id="main" class="sg-main container" role="main">
+        <div id="top" class="sg-header" role="banner">
+    <div class="sg-container">
+      <h1 class="sg-logo"><img src="https://www.satselixia.no/Images/SATS/logo-no.svg" />
+        <span class="sg-logo-full">STYLE GUIDE</span>
+      </h1>
+      <button type="button" class="sg-nav-toggle">Menu</button>
+    </div>
+  </div><!--/.sg-header-->
+      <div class="sg-container">
+        <div class="sg-info">
+          <div class="sg-about sg-section">
+            <h2 id="sg-about" class="sg-h2">Intro</h2>
+            <p>Bootstrapped style guide for Sats/Elixia. More patterns and detailed documentation will come.</p>
+            <p>Variables (less) marked with prefix @.</p>
+            <p>To view source code click the View source button below the elements.</p>
+            <p>If you have any questions contact Svein Erik at Making Waves.</p>
+          </div><!--/.sg-about-->
+
+          <!-- Manually add your UI colors here. -->
+          <div class="sg-colors sg-section">
+            <h2 id="sg-colors" class="sg-h2">Colors</h2>
+            <div class="sg-color-grid">
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #333333;"></div>
+                <div class="sg-color-name">@sats-black-color</div>
+                <div class="sg-color-value">#333333</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #4b186c;"></div>
+                <div class="sg-color-name">@sats-purple-color</div>
+                <div class="sg-color-value">#4b186c</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #ee0974;"></div>
+                <div class="sg-color-name">@sats-pink-color</div>
+                <div class="sg-color-value">#ee0974</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #95d600;"></div>
+                <div class="sg-color-name">@sats-green-color</div>
+                <div class="sg-color-value">#95d600</div>
+              </div>
+            </div><!--/.sg-color-grid-->
+            <div class="sg-color-grid">
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #d8d8d8;"></div>
+                <div class="sg-color-name">@sats-grey-color</div>
+                <div class="sg-color-value">#d8d8d8</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #e6e6e2;"></div>
+                <div class="sg-color-name">@sats-warm-grey-color</div>
+                <div class="sg-color-value">#e6e6e2</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #f3f3f3;"></div>
+                <div class="sg-color-name">@sats-light-grey-color</div>
+                <div class="sg-color-value">#f3f3f3</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #e6e6e6;"></div>
+                <div class="sg-color-name">@sats-whitesmoke-color</div>
+                <div class="sg-color-value">#e6e6e6</div>
+              </div>
+            
+            </div><!--/.sg-color-grid-->
+          </div><!--/.sg-colors-->
+
+          <!-- Manually add your fonts here. -->
+          <div class="sg-font-stacks sg-section">
+            <h2 id="sg-fontStacks" class="sg-h2">Font Stacks</h2>
+            <dl class="sg-font-list">
+              <dt>Body Font (@font-family-sans-serif):</dt>
+              <dd style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
+
+              <dt>Body Font Italic:</dt>
+              <dd style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; font-style: italic;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
+
+              <dt>Body Font Bold:</dt>
+              <dd style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; font-weight: 800;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
+
+              <dt>Heading Font (@font-family-serif):</dt>
+              <dd style='font-family: "GuardianEgyptianWeb", Times, "Times New Roman", serif; font-weight: 300'>GuardianEgyptianWeb, Times, "Times New Roman", serif;</dd>
+
+              <dt>Heading Font Bold:</dt>
+              <dd style='font-family: "GuardianEgyptianWeb", Times, "Times New Roman", serif; font-weight: 500;'>GuardianEgyptianWeb, Times, "Times New Roman", serif;</dd>
+            </dl>
+            <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
+          </div><!--/.sg-font-stacks-->
+        </div><!--/.sg-info-->
+
+        <div class="sg-section-group"><h1 id="sg-markup-base" class="sg-h1 sg-title">base</h1><a class="sg-hash-link" href="#sg-markup-base"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-base-buttons-html" class="sg-h2 sg-title">buttons</h2><a class="sg-hash-link" href="#sg-markup-base-buttons-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example">
+<p><button type="button" class="btn btn-primary">Button primary</button></p>
+<p><button type="button" class="btn btn-default">Button default</button></p>
+<hr>
+<p><button type="button" class="btn btn-primary btn-sm">Button primary small</button></p>
+<p><button type="button" class="btn btn-primary btn-lg">Button primary large</button></p>
+<p><button type="button" class="btn btn-primary btn-xl">Button primary x-large</button></p>
+<hr>
+<p><button type="button" class="btn btn-outline">Button outline</button></p>
+<p><button type="button" class="btn btn-primary btn-outline">Button primary outline</button></p>
+<p><button type="button" class="btn btn-default btn-outline">Button default outline</button></p>
+
+</div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button primary&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Button default&lt;/button&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Button primary small&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Button primary large&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-xl&quot;&gt;Button primary x-large&lt;/button&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-outline&quot;&gt;Button outline&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-outline&quot;&gt;Button primary outline&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-outline&quot;&gt;Button default outline&lt;/button&gt;&lt;/p&gt;
+
+</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-forms-html" class="sg-h2 sg-title">forms</h2><a class="sg-hash-link" href="#sg-markup-base-forms-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><div class="xformsblock">
+    <form class="form">
+  <fieldset>
+    <legend>Form Fields</legend>
+    <div><label for="text-input">Text input</label> <input id="text-input" type="text"></div>
+    <div><label for="text-input-placeholder">Text input with placeholder</label> <input id="text-input-placeholder" type="text" placeholder="I'm placeholder text"></div>
+    <div><label for="readonly-input">Readonly input</label> <input id="readonly-input" type="text" value="Read only text input" readonly></div>
+    <div><label for="disabled-input">Disabled input</label> <input id="disabled-input" type="text" value="Disabled text input" disabled></div>
+    <div><label for="required-input">Required input <span class="required">*</span></label> <input id="required-input" type="text" required aria-required="true"></div>
+    <div><label for="email-input">Email input</label> <input id="email-input" type="email"></div>
+    <div><label for="search-input">Search input</label> <input id="search-input" type="search"></div>
+    <div><label for="speech-input">Speech recognition input</label> <input id="speech-input" type="text" name="speech" x-webkit-speech=""></div>
+    <div><label for="tel-input">Tel input</label> <input id="tel-input" type="tel"></div>
+    <div><label for="url-input">URL input</label> <input id="url-input" type="url" placeholder="http://"></div>
+    <div><label for="password-input">Password input</label> <input id="password-input" type="password" value="password"></div>
+    <div><label for="select-field">Select field</label> <select id="select-field"><option selected="selected">Option 01</option><option>Option 02</option></select></div>
+    <div><label for="multiple-select-field">Multiple select field</label><select id="multiple-select-field" multiple size="5"><option>Option 1</option><option>Option 2</option><option>Option 3</option><option>Option 4</option><option>Option 5</option><option>Option 6</option><option>Option 7</option><option>Option 8</option><option>Option 9</option><option>Option 10</option></select></div>
+    <div><label for="radio-input"><input id="radio-input" type="radio" name="rad"> Radio input</label></div>
+    <div><label for="checkbox-input"><input id="checkbox-input" type="checkbox"> Checkbox input</label></div>
+    <div><label for="file-input">File input</label> <input id="file-input" type="file"></div>
+    <div><label for="textarea">Textarea</label> <textarea id="textarea" cols="30" rows="5" >Textarea text</textarea></div>
+    <div><label for="color-input">Color input</label> <input id="color-input" type="color" value="#000000"></div>
+    <div><label for="number-input">Number input</label> <input id="number-input" type="number" value="5" min="0" max="10"></div>
+    <div><label for="range-input">Range input</label> <input id="range-input" type="range" value="0" min="0" max="100"> <output>0</output>
+    <script>
+      if (document.querySelector) {
+        document.querySelector('#range-input').onchange = function(e) {
+          e.target.nextElementSibling.innerText = e.target.value;
+        }
+      }
+    </script>
+    </div>
+    <div><label for="date-input">Date input</label> <input id="date-input" type="date"></div>
+    <div><label for="month-input">Month input</label> <input id="month-input" type="month"></div>
+    <div><label for="week-input">Week input</label> <input id="week-input" type="week"></div>
+    <div><label for="time-input">Time input</label> <input id="time-input" type="time"></div>
+    <div><label for="datetime-input">Datetime input</label> <input id="datetime-input" type="datetime"></div>
+    <div><label for="datetime-local-input">Datetime-local input</label> <input id="datetime-local-input" type="datetime-local"></div>
+  </fieldset>
+  <input type="submit" value="Submit form">
+</form>
+</div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;xformsblock&quot;&gt;
+    &lt;form class=&quot;form&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Form Fields&lt;/legend&gt;
+    &lt;div&gt;&lt;label for=&quot;text-input&quot;&gt;Text input&lt;/label&gt; &lt;input id=&quot;text-input&quot; type=&quot;text&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;text-input-placeholder&quot;&gt;Text input with placeholder&lt;/label&gt; &lt;input id=&quot;text-input-placeholder&quot; type=&quot;text&quot; placeholder=&quot;I'm placeholder text&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;readonly-input&quot;&gt;Readonly input&lt;/label&gt; &lt;input id=&quot;readonly-input&quot; type=&quot;text&quot; value=&quot;Read only text input&quot; readonly&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;disabled-input&quot;&gt;Disabled input&lt;/label&gt; &lt;input id=&quot;disabled-input&quot; type=&quot;text&quot; value=&quot;Disabled text input&quot; disabled&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;required-input&quot;&gt;Required input &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt; &lt;input id=&quot;required-input&quot; type=&quot;text&quot; required aria-required=&quot;true&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;email-input&quot;&gt;Email input&lt;/label&gt; &lt;input id=&quot;email-input&quot; type=&quot;email&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;search-input&quot;&gt;Search input&lt;/label&gt; &lt;input id=&quot;search-input&quot; type=&quot;search&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;speech-input&quot;&gt;Speech recognition input&lt;/label&gt; &lt;input id=&quot;speech-input&quot; type=&quot;text&quot; name=&quot;speech&quot; x-webkit-speech=&quot;&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;tel-input&quot;&gt;Tel input&lt;/label&gt; &lt;input id=&quot;tel-input&quot; type=&quot;tel&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;url-input&quot;&gt;URL input&lt;/label&gt; &lt;input id=&quot;url-input&quot; type=&quot;url&quot; placeholder=&quot;http://&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;password-input&quot;&gt;Password input&lt;/label&gt; &lt;input id=&quot;password-input&quot; type=&quot;password&quot; value=&quot;password&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;select-field&quot;&gt;Select field&lt;/label&gt; &lt;select id=&quot;select-field&quot;&gt;&lt;option selected=&quot;selected&quot;&gt;Option 01&lt;/option&gt;&lt;option&gt;Option 02&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;multiple-select-field&quot;&gt;Multiple select field&lt;/label&gt;&lt;select id=&quot;multiple-select-field&quot; multiple size=&quot;5&quot;&gt;&lt;option&gt;Option 1&lt;/option&gt;&lt;option&gt;Option 2&lt;/option&gt;&lt;option&gt;Option 3&lt;/option&gt;&lt;option&gt;Option 4&lt;/option&gt;&lt;option&gt;Option 5&lt;/option&gt;&lt;option&gt;Option 6&lt;/option&gt;&lt;option&gt;Option 7&lt;/option&gt;&lt;option&gt;Option 8&lt;/option&gt;&lt;option&gt;Option 9&lt;/option&gt;&lt;option&gt;Option 10&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;radio-input&quot;&gt;&lt;input id=&quot;radio-input&quot; type=&quot;radio&quot; name=&quot;rad&quot;&gt; Radio input&lt;/label&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;checkbox-input&quot;&gt;&lt;input id=&quot;checkbox-input&quot; type=&quot;checkbox&quot;&gt; Checkbox input&lt;/label&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;file-input&quot;&gt;File input&lt;/label&gt; &lt;input id=&quot;file-input&quot; type=&quot;file&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;textarea&quot;&gt;Textarea&lt;/label&gt; &lt;textarea id=&quot;textarea&quot; cols=&quot;30&quot; rows=&quot;5&quot; &gt;Textarea text&lt;/textarea&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;color-input&quot;&gt;Color input&lt;/label&gt; &lt;input id=&quot;color-input&quot; type=&quot;color&quot; value=&quot;#000000&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;number-input&quot;&gt;Number input&lt;/label&gt; &lt;input id=&quot;number-input&quot; type=&quot;number&quot; value=&quot;5&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;range-input&quot;&gt;Range input&lt;/label&gt; &lt;input id=&quot;range-input&quot; type=&quot;range&quot; value=&quot;0&quot; min=&quot;0&quot; max=&quot;100&quot;&gt; &lt;output&gt;0&lt;/output&gt;
+    &lt;script&gt;
+      if (document.querySelector) {
+        document.querySelector('#range-input').onchange = function(e) {
+          e.target.nextElementSibling.innerText = e.target.value;
+        }
+      }
+    &lt;/script&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;date-input&quot;&gt;Date input&lt;/label&gt; &lt;input id=&quot;date-input&quot; type=&quot;date&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;month-input&quot;&gt;Month input&lt;/label&gt; &lt;input id=&quot;month-input&quot; type=&quot;month&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;week-input&quot;&gt;Week input&lt;/label&gt; &lt;input id=&quot;week-input&quot; type=&quot;week&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;time-input&quot;&gt;Time input&lt;/label&gt; &lt;input id=&quot;time-input&quot; type=&quot;time&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;datetime-input&quot;&gt;Datetime input&lt;/label&gt; &lt;input id=&quot;datetime-input&quot; type=&quot;datetime&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;label for=&quot;datetime-local-input&quot;&gt;Datetime-local input&lt;/label&gt; &lt;input id=&quot;datetime-local-input&quot; type=&quot;datetime-local&quot;&gt;&lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit form&quot;&gt;
+&lt;/form&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-headings-html" class="sg-h2 sg-title">headings</h2><a class="sg-hash-link" href="#sg-markup-base-headings-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><h1>Heading 1 with <small>small text</small> and a <a href="#">link</a></h1>
+<h2>Heading 2 with <small>small text</small> and a <a href="#">link</a></h2>
+<h3>Heading 3 with <small>small text</small> and a <a href="#">link</a></h3>
+<h4>Heading 4 with <small>small text</small> and a <a href="#">link</a></h4>
+<h5>Heading 5 with <small>small text</small> and a <a href="#">link</a></h5>
+<h6>Heading 6 with <small>small text</small> and a <a href="#">link</a></h6></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;h1&gt;Heading 1 with &lt;small&gt;small text&lt;/small&gt; and a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;&lt;/h1&gt;
+&lt;h2&gt;Heading 2 with &lt;small&gt;small text&lt;/small&gt; and a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;Heading 3 with &lt;small&gt;small text&lt;/small&gt; and a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;Heading 4 with &lt;small&gt;small text&lt;/small&gt; and a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;&lt;/h4&gt;
+&lt;h5&gt;Heading 5 with &lt;small&gt;small text&lt;/small&gt; and a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;&lt;/h5&gt;
+&lt;h6&gt;Heading 6 with &lt;small&gt;small text&lt;/small&gt; and a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;&lt;/h6&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-hr-html" class="sg-h2 sg-title">hr</h2><a class="sg-hash-link" href="#sg-markup-base-hr-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><hr></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;hr&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-media-html" class="sg-h2 sg-title">media</h2><a class="sg-hash-link" href="#sg-markup-base-media-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><h3>Default Image</h3>
+<img src="http://placehold.it/240x240" alt="Image alt text 3">
+
+<h3>Linked Image</h3>
+<a href="#"><img src="http://placehold.it/240x240" alt="Image alt text 4"></a>
+
+<h3>Missing Image</h3>
+<img alt="This is an example of a missing image">
+</div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;h3&gt;Default Image&lt;/h3&gt;
+&lt;img src=&quot;http://placehold.it/240x240&quot; alt=&quot;Image alt text 3&quot;&gt;
+
+&lt;h3&gt;Linked Image&lt;/h3&gt;
+&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;http://placehold.it/240x240&quot; alt=&quot;Image alt text 4&quot;&gt;&lt;/a&gt;
+
+&lt;h3&gt;Missing Image&lt;/h3&gt;
+&lt;img alt=&quot;This is an example of a missing image&quot;&gt;
+</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-tables-html" class="sg-h2 sg-title">tables</h2><a class="sg-hash-link" href="#sg-markup-base-tables-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><h3>Default Table</h3>
+<table class="table">
+  <caption>Table Caption</caption>
+  <thead>
+    <tr>
+      <th scope="col">thead th</th>
+      <th scope="col">thead th</th>
+      <th scope="col">thead th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Striped Hover Table</h3>
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th colspan="3">thead th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Info Table</h3>
+<table class="table table-info">
+  <thead>
+    <tr>
+      <th colspan="3">thead th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="hidden-xs">Booking large</h3>
+<table class="table booking-table table-expandable-striped hidden-xs">
+  <tbody>
+    <tr>
+      <th colspan="6" class="day-table-header">Day table header</th>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>19:30</td>
+      <td>60 min</td>
+      <td><a href="#">Cycling</a></td>
+      <td><a href="#">Drammen Sats</a></td>
+      <td>Turid Laila Olsen</td>
+      <td><a type="button" class="btn btn-block btn-primary">
+    Booke
+</a></td>
+    </tr>
+    <tr>
+      <td>19:30</td>
+      <td>60 min</td>
+      <td><a href="#">Cycling</a></td>
+      <td><a href="#">Drammen Sats</a></td>
+      <td>Turid Laila Olsen</td>
+      <td><a type="button" class="btn btn-block btn-primary">
+    Booke
+</a></td>
+    </tr>
+    <tr>
+      <td>19:30</td>
+      <td>60 min</td>
+      <td><a href="#">Cycling</a></td>
+      <td><a href="#">Drammen Sats</a></td>
+      <td>Turid Laila Olsen</td>
+      <td><a type="button" class="btn btn-block btn-primary">
+    Booke
+</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="visible-xs">Booking mobile</h3>
+<table class="table booking-table booking-table-mobile visible-xs">
+  <tbody>
+    <tr>
+      <th colspan="6" class="day-table-header">Day table header</th>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>
+        <div class=" panel panel-default panel-card xs-booking-card">
+            <div class="panel-heading">
+                <h4 class="title ng-binding" itemprop="name">Cycling</h4>
+                <p class="subtitle bold">
+                    <span class="sats-icon-booking-time"></span>
+                    <span class="ng-binding"> <meta itemprop="startDate">19:30</span> –
+                    <span itemprop="duration" class="ng-binding">60</span> min
+                </p>
+                <p class="subtitle ng-binding" itemprop="performer">
+                    <span class="sats-icon-booking-trainer"></span>
+                    Benedikte Nyborg Olsen
+                </p>
+                <p class="subtitle"><span class="sats-icon-pin"></span> <span>Drammen SATS</span></p>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-xs-12">
+                      <a type="button" class="btn btn-block btn-sm btn-primary">Booke</a>
+                    </div>
+                    <div class="col-xs-12">
+                        <button type="button" class="btn btn-default btn-sm btn-block btn-outline">
+                            Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class=" panel panel-default panel-card xs-booking-card">
+            <div class="panel-heading">
+                <h4 class="title ng-binding" itemprop="name">Cycling</h4>
+                <p class="subtitle bold">
+                    <span class="sats-icon-booking-time"></span>
+                    <span class="ng-binding"> <meta itemprop="startDate">19:30</span> –
+                    <span itemprop="duration" class="ng-binding">60</span> min
+                </p>
+                <p class="subtitle ng-binding" itemprop="performer">
+                    <span class="sats-icon-booking-trainer"></span>
+                    Benedikte Nyborg Olsen
+                </p>
+                <p class="subtitle"><span class="sats-icon-pin"></span> <span>Drammen SATS</span></p>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-xs-12">
+                      <a type="button" class="btn btn-block btn-sm btn-primary">Booke</a>
+                    </div>
+                    <div class="col-xs-12">
+                        <button type="button" class="btn btn-default btn-sm btn-block btn-outline">
+                            Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class=" panel panel-default panel-card xs-booking-card">
+            <div class="panel-heading">
+                <h4 class="title ng-binding" itemprop="name">Cycling</h4>
+                <p class="subtitle bold">
+                    <span class="sats-icon-booking-time"></span>
+                    <span class="ng-binding"> <meta itemprop="startDate">19:30</span> –
+                    <span itemprop="duration" class="ng-binding">60</span> min
+                </p>
+                <p class="subtitle ng-binding" itemprop="performer">
+                    <span class="sats-icon-booking-trainer"></span>
+                    Benedikte Nyborg Olsen
+                </p>
+                <p class="subtitle"><span class="sats-icon-pin"></span> <span>Drammen SATS</span></p>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-xs-12">
+                      <a type="button" class="btn btn-block btn-sm btn-primary">Booke</a>
+                    </div>
+                    <div class="col-xs-12">
+                        <button type="button" class="btn btn-default btn-sm btn-block btn-outline">
+                            Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;h3&gt;Default Table&lt;/h3&gt;
+&lt;table class=&quot;table&quot;&gt;
+  &lt;caption&gt;Table Caption&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;thead th&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;thead th&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;thead th&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3&gt;Striped Hover Table&lt;/h3&gt;
+&lt;table class=&quot;table table-striped table-hover&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&quot;3&quot;&gt;thead th&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3&gt;Info Table&lt;/h3&gt;
+&lt;table class=&quot;table table-info&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&quot;3&quot;&gt;thead th&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 class=&quot;hidden-xs&quot;&gt;Booking large&lt;/h3&gt;
+&lt;table class=&quot;table booking-table table-expandable-striped hidden-xs&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&quot;6&quot; class=&quot;day-table-header&quot;&gt;Day table header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;19:30&lt;/td&gt;
+      &lt;td&gt;60 min&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Cycling&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Drammen Sats&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Turid Laila Olsen&lt;/td&gt;
+      &lt;td&gt;&lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-primary&quot;&gt;
+    Booke
+&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;19:30&lt;/td&gt;
+      &lt;td&gt;60 min&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Cycling&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Drammen Sats&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Turid Laila Olsen&lt;/td&gt;
+      &lt;td&gt;&lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-primary&quot;&gt;
+    Booke
+&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;19:30&lt;/td&gt;
+      &lt;td&gt;60 min&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Cycling&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Drammen Sats&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Turid Laila Olsen&lt;/td&gt;
+      &lt;td&gt;&lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-primary&quot;&gt;
+    Booke
+&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 class=&quot;visible-xs&quot;&gt;Booking mobile&lt;/h3&gt;
+&lt;table class=&quot;table booking-table booking-table-mobile visible-xs&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&quot;6&quot; class=&quot;day-table-header&quot;&gt;Day table header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;div class=&quot; panel panel-default panel-card xs-booking-card&quot;&gt;
+            &lt;div class=&quot;panel-heading&quot;&gt;
+                &lt;h4 class=&quot;title ng-binding&quot; itemprop=&quot;name&quot;&gt;Cycling&lt;/h4&gt;
+                &lt;p class=&quot;subtitle bold&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-time&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;ng-binding&quot;&gt; &lt;meta itemprop=&quot;startDate&quot;&gt;19:30&lt;/span&gt; –
+                    &lt;span itemprop=&quot;duration&quot; class=&quot;ng-binding&quot;&gt;60&lt;/span&gt; min
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle ng-binding&quot; itemprop=&quot;performer&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-trainer&quot;&gt;&lt;/span&gt;
+                    Benedikte Nyborg Olsen
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle&quot;&gt;&lt;span class=&quot;sats-icon-pin&quot;&gt;&lt;/span&gt; &lt;span&gt;Drammen SATS&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel-footer&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                      &lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-sm btn-primary&quot;&gt;Booke&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm btn-block btn-outline&quot;&gt;
+                            Info
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;div class=&quot; panel panel-default panel-card xs-booking-card&quot;&gt;
+            &lt;div class=&quot;panel-heading&quot;&gt;
+                &lt;h4 class=&quot;title ng-binding&quot; itemprop=&quot;name&quot;&gt;Cycling&lt;/h4&gt;
+                &lt;p class=&quot;subtitle bold&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-time&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;ng-binding&quot;&gt; &lt;meta itemprop=&quot;startDate&quot;&gt;19:30&lt;/span&gt; –
+                    &lt;span itemprop=&quot;duration&quot; class=&quot;ng-binding&quot;&gt;60&lt;/span&gt; min
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle ng-binding&quot; itemprop=&quot;performer&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-trainer&quot;&gt;&lt;/span&gt;
+                    Benedikte Nyborg Olsen
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle&quot;&gt;&lt;span class=&quot;sats-icon-pin&quot;&gt;&lt;/span&gt; &lt;span&gt;Drammen SATS&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel-footer&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                      &lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-sm btn-primary&quot;&gt;Booke&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm btn-block btn-outline&quot;&gt;
+                            Info
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;div class=&quot; panel panel-default panel-card xs-booking-card&quot;&gt;
+            &lt;div class=&quot;panel-heading&quot;&gt;
+                &lt;h4 class=&quot;title ng-binding&quot; itemprop=&quot;name&quot;&gt;Cycling&lt;/h4&gt;
+                &lt;p class=&quot;subtitle bold&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-time&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;ng-binding&quot;&gt; &lt;meta itemprop=&quot;startDate&quot;&gt;19:30&lt;/span&gt; –
+                    &lt;span itemprop=&quot;duration&quot; class=&quot;ng-binding&quot;&gt;60&lt;/span&gt; min
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle ng-binding&quot; itemprop=&quot;performer&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-trainer&quot;&gt;&lt;/span&gt;
+                    Benedikte Nyborg Olsen
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle&quot;&gt;&lt;span class=&quot;sats-icon-pin&quot;&gt;&lt;/span&gt; &lt;span&gt;Drammen SATS&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel-footer&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                      &lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-sm btn-primary&quot;&gt;Booke&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm btn-block btn-outline&quot;&gt;
+                            Info
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-text-elements-html" class="sg-h2 sg-title">text elements</h2><a class="sg-hash-link" href="#sg-markup-base-text-elements-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><p>The <a href="#">a element</a> example</p>
+<p>The <b>b element</b> example</p>
+<p>The <cite>cite element</cite> example</p>
+<p>The <code>code element</code> example</p>
+<p>The <em>em element</em> example</p>
+<p>The <i>i element</i> example</p>
+<p>The <strong>strong element</strong> example</p>
+<p>Unordered list example</p>
+<ul>
+  <li>list item 1</li>
+  <li>list item 1
+    <ul>
+      <li>list item 2</li>
+      <li>list item 2
+        <ul>
+          <li>list item 3</li>
+          <li>list item 3</li>
+        </ul>
+      </li>
+      <li>list item 2</li>
+      <li>list item 2</li>
+    </ul>
+  </li>
+  <li>list item 1</li>
+  <li>list item 1</li>
+</ul>
+<p>Ordered list example</p>
+<ol>
+  <li>list item 1</li>
+  <li>list item 1
+    <ol>
+      <li>list item 2</li>
+      <li>list item 2
+        <ol>
+          <li>list item 3</li>
+          <li>list item 3</li>
+        </ol>
+      </li>
+      <li>list item 2</li>
+      <li>list item 2</li>
+    </ol>
+  </li>
+  <li>list item 1</li>
+  <li>list item 1</li>
+</ol></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;p&gt;The &lt;a href=&quot;#&quot;&gt;a element&lt;/a&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;b&gt;b element&lt;/b&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;cite&gt;cite element&lt;/cite&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;code element&lt;/code&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;em element&lt;/em&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;i&gt;i element&lt;/i&gt; example&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;strong element&lt;/strong&gt; example&lt;/p&gt;
+&lt;p&gt;Unordered list example&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;list item 1&lt;/li&gt;
+  &lt;li&gt;list item 1
+    &lt;ul&gt;
+      &lt;li&gt;list item 2&lt;/li&gt;
+      &lt;li&gt;list item 2
+        &lt;ul&gt;
+          &lt;li&gt;list item 3&lt;/li&gt;
+          &lt;li&gt;list item 3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;list item 2&lt;/li&gt;
+      &lt;li&gt;list item 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;list item 1&lt;/li&gt;
+  &lt;li&gt;list item 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ordered list example&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;list item 1&lt;/li&gt;
+  &lt;li&gt;list item 1
+    &lt;ol&gt;
+      &lt;li&gt;list item 2&lt;/li&gt;
+      &lt;li&gt;list item 2
+        &lt;ol&gt;
+          &lt;li&gt;list item 3&lt;/li&gt;
+          &lt;li&gt;list item 3&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;list item 2&lt;/li&gt;
+      &lt;li&gt;list item 2&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;list item 1&lt;/li&gt;
+  &lt;li&gt;list item 1&lt;/li&gt;
+&lt;/ol&gt;</code></pre></div></div></div></div><h1 id="sg-markup-compontents" class="sg-h1 sg-title">compontents</h1><a class="sg-hash-link" href="#sg-markup-compontents"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-compontents-Cards-default-html" class="sg-h2 sg-title">Cards default</h2><a class="sg-hash-link" href="#sg-markup-compontents-Cards-default-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-example"><div class="no-touchevents">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
+                <div class="panel panel-default panel-card inspiration-card" >
+                    <div class="panel-heading" video-modal="" video-url="" embed-code="">
+                        <img alt="Fra frokostseminaret og vårt nye konsept" src="https://www.satselixia.no/globalassets/corporate/corp_article-page.jpg">
+                        <div class="image-overlay"></div>
+                        <div class="panel-header">
+                            <h2 class="h3">Fra frokostseminaret og vårt nye konsept</h2>
+                            <p>›Vi samlet de fremste ekspertene på feltet fysisk aktivitet på arbeidsplassen.</p>
+                                <div class="button-container">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                                <a class="btn btn-default btn-sm btn-block" role="button" href="/bedrift/fra-frokostseminaret-og-vart-nye-konsept/">Les mer</a>
+                                        </div>
+                                       </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                <div class="panel panel-default panel-card inspiration-card pointer">
+                    <div class="panel-heading" video-modal="" video-url="https://www.youtube.com/embed/G38anxtDreI?rel=0&amp;showinfo=0" embed-code="">
+                       <div class="play-icon"></div>
+                        <img alt="Björn Borg satser på sine medarbeiderne" src="https://www.satselixia.no/globalassets/corporate/bjorn_borg1.gif">
+                        <div class="image-overlay"></div>
+                        <div class="panel-header">
+                            <h2 class="h3">Björn Borg satser på sine medarbeiderne</h2>
+                            <p class="">›"Trening er et logisk trekk i arbeidet med å nå målene våre.."</p>
+                                <div class="button-container">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                                <a class="btn btn-default btn-sm btn-block" role="button" href="/bedrift/bjorn-borg/">Les mer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                <div class="panel panel-default panel-card inspiration-card">
+                    <div class="panel-heading" video-modal="" video-url="" embed-code="">
+                        <img alt="Hvorfor trening?" src="https://www.satselixia.no/globalassets/corporate/hvorfor-trening.jpg">
+                        <div class="image-overlay"></div>
+                        <div class="panel-header">
+                            <h2 class="h3">Hvorfor trening?</h2>
+                            <p>›God helse gir større arbeidskapasitet.</p>
+                                <div class="button-container">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                                <a class="btn btn-default btn-sm btn-block" role="button" href="/bedrift/hvorfor-trening/">Les mer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                <div class="panel panel-default panel-card inspiration-card pointer">
+                    <div class="panel-heading" video-modal="" video-url="https://www.youtube.com/embed/G38anxtDreI?rel=0&amp;showinfo=0" embed-code="">
+                       <div class="play-icon"></div>
+                        <img alt="Björn Borg satser på sine medarbeiderne" src="https://www.satselixia.no/globalassets/corporate/bjorn_borg1.gif">
+                        <div class="image-overlay"></div>
+                        <div class="panel-header">
+                            <h2 class="h3">Björn Borg satser på sine medarbeiderne</h2>
+                            <p class="">›"Trening er et logisk trekk i arbeidet med å nå målene våre.."</p>
+                                <div class="button-container">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                                <a class="btn btn-default btn-sm btn-block" role="button" href="/bedrift/bjorn-borg/">Les mer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                <div class="panel panel-default panel-card inspiration-card">
+                    <div class="panel-heading" video-modal="" video-url="" embed-code="">
+                        <img alt="Hva tilbyr vi?" src="https://www.satselixia.no/globalassets/corporate/hva-tilbyr-vi.jpg">
+                        <div class="image-overlay"></div>
+                        <div class="panel-header">
+                            <h2 class="h3">Hva tilbyr vi?</h2>
+                            <p>›Passer alle nivåer uansett treningserfaring.</p>
+                                <div class="button-container">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                                <a class="btn btn-default btn-sm btn-block" role="button" href="/bedrift/hva-tilbyr-vi/">Les mer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
+                <div class="panel panel-default panel-card inspiration-card">
+                    <div class="panel-heading" video-modal="" video-url="" embed-code="">
+                        <img alt="FAQ" src="https://www.satselixia.no/globalassets/corporate/sats-foretag-vara-produkter.jpg">
+                        <div class="image-overlay"></div>
+                        <div class="panel-header">
+                            <h2 class="h3 ">FAQ</h2>
+                            <p>›Svar på vanlige spørsmål.</p>
+                                <div class="button-container">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                                <a class="btn btn-default btn-sm btn-block" role="button" href="/bedrift/faq/">Les mer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <button type="button" class="btn btn-lg btn-primary" autocomplete="off">
+                Vis mer
+                <span class="badge">5</span>
+            </button>
+        </div>
+    </div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;no-touchevents&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-6 col-xs-12 col-sm-12 col-lg-6&quot;&gt;
+                &lt;div class=&quot;panel panel-default panel-card inspiration-card&quot; &gt;
+                    &lt;div class=&quot;panel-heading&quot; video-modal=&quot;&quot; video-url=&quot;&quot; embed-code=&quot;&quot;&gt;
+                        &lt;img alt=&quot;Fra frokostseminaret og vårt nye konsept&quot; src=&quot;https://www.satselixia.no/globalassets/corporate/corp_article-page.jpg&quot;&gt;
+                        &lt;div class=&quot;image-overlay&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;panel-header&quot;&gt;
+                            &lt;h2 class=&quot;h3&quot;&gt;Fra frokostseminaret og vårt nye konsept&lt;/h2&gt;
+                            &lt;p&gt;›Vi samlet de fremste ekspertene på feltet fysisk aktivitet på arbeidsplassen.&lt;/p&gt;
+                                &lt;div class=&quot;button-container&quot;&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-xs-6&quot;&gt;
+                                                &lt;a class=&quot;btn btn-default btn-sm btn-block&quot; role=&quot;button&quot; href=&quot;/bedrift/fra-frokostseminaret-og-vart-nye-konsept/&quot;&gt;Les mer&lt;/a&gt;
+                                        &lt;/div&gt;
+                                       &lt;/div&gt;
+                                &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-6 col-xs-12 col-sm-6 col-lg-3 col-md-3&quot;&gt;
+                &lt;div class=&quot;panel panel-default panel-card inspiration-card pointer&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot; video-modal=&quot;&quot; video-url=&quot;https://www.youtube.com/embed/G38anxtDreI?rel=0&amp;amp;showinfo=0&quot; embed-code=&quot;&quot;&gt;
+                       &lt;div class=&quot;play-icon&quot;&gt;&lt;/div&gt;
+                        &lt;img alt=&quot;Björn Borg satser på sine medarbeiderne&quot; src=&quot;https://www.satselixia.no/globalassets/corporate/bjorn_borg1.gif&quot;&gt;
+                        &lt;div class=&quot;image-overlay&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;panel-header&quot;&gt;
+                            &lt;h2 class=&quot;h3&quot;&gt;Björn Borg satser på sine medarbeiderne&lt;/h2&gt;
+                            &lt;p class=&quot;&quot;&gt;›&quot;Trening er et logisk trekk i arbeidet med å nå målene våre..&quot;&lt;/p&gt;
+                                &lt;div class=&quot;button-container&quot;&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-xs-6&quot;&gt;
+                                                &lt;a class=&quot;btn btn-default btn-sm btn-block&quot; role=&quot;button&quot; href=&quot;/bedrift/bjorn-borg/&quot;&gt;Les mer&lt;/a&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-6 col-xs-12 col-sm-6 col-lg-3 col-md-3&quot;&gt;
+                &lt;div class=&quot;panel panel-default panel-card inspiration-card&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot; video-modal=&quot;&quot; video-url=&quot;&quot; embed-code=&quot;&quot;&gt;
+                        &lt;img alt=&quot;Hvorfor trening?&quot; src=&quot;https://www.satselixia.no/globalassets/corporate/hvorfor-trening.jpg&quot;&gt;
+                        &lt;div class=&quot;image-overlay&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;panel-header&quot;&gt;
+                            &lt;h2 class=&quot;h3&quot;&gt;Hvorfor trening?&lt;/h2&gt;
+                            &lt;p&gt;›God helse gir større arbeidskapasitet.&lt;/p&gt;
+                                &lt;div class=&quot;button-container&quot;&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-xs-6&quot;&gt;
+                                                &lt;a class=&quot;btn btn-default btn-sm btn-block&quot; role=&quot;button&quot; href=&quot;/bedrift/hvorfor-trening/&quot;&gt;Les mer&lt;/a&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-6 col-xs-12 col-sm-6 col-lg-3 col-md-3&quot;&gt;
+                &lt;div class=&quot;panel panel-default panel-card inspiration-card pointer&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot; video-modal=&quot;&quot; video-url=&quot;https://www.youtube.com/embed/G38anxtDreI?rel=0&amp;amp;showinfo=0&quot; embed-code=&quot;&quot;&gt;
+                       &lt;div class=&quot;play-icon&quot;&gt;&lt;/div&gt;
+                        &lt;img alt=&quot;Björn Borg satser på sine medarbeiderne&quot; src=&quot;https://www.satselixia.no/globalassets/corporate/bjorn_borg1.gif&quot;&gt;
+                        &lt;div class=&quot;image-overlay&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;panel-header&quot;&gt;
+                            &lt;h2 class=&quot;h3&quot;&gt;Björn Borg satser på sine medarbeiderne&lt;/h2&gt;
+                            &lt;p class=&quot;&quot;&gt;›&quot;Trening er et logisk trekk i arbeidet med å nå målene våre..&quot;&lt;/p&gt;
+                                &lt;div class=&quot;button-container&quot;&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-xs-6&quot;&gt;
+                                                &lt;a class=&quot;btn btn-default btn-sm btn-block&quot; role=&quot;button&quot; href=&quot;/bedrift/bjorn-borg/&quot;&gt;Les mer&lt;/a&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-6 col-xs-12 col-sm-6 col-lg-3 col-md-3&quot;&gt;
+                &lt;div class=&quot;panel panel-default panel-card inspiration-card&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot; video-modal=&quot;&quot; video-url=&quot;&quot; embed-code=&quot;&quot;&gt;
+                        &lt;img alt=&quot;Hva tilbyr vi?&quot; src=&quot;https://www.satselixia.no/globalassets/corporate/hva-tilbyr-vi.jpg&quot;&gt;
+                        &lt;div class=&quot;image-overlay&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;panel-header&quot;&gt;
+                            &lt;h2 class=&quot;h3&quot;&gt;Hva tilbyr vi?&lt;/h2&gt;
+                            &lt;p&gt;›Passer alle nivåer uansett treningserfaring.&lt;/p&gt;
+                                &lt;div class=&quot;button-container&quot;&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-xs-6&quot;&gt;
+                                                &lt;a class=&quot;btn btn-default btn-sm btn-block&quot; role=&quot;button&quot; href=&quot;/bedrift/hva-tilbyr-vi/&quot;&gt;Les mer&lt;/a&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-6 col-xs-12 col-sm-12 col-lg-6&quot;&gt;
+                &lt;div class=&quot;panel panel-default panel-card inspiration-card&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot; video-modal=&quot;&quot; video-url=&quot;&quot; embed-code=&quot;&quot;&gt;
+                        &lt;img alt=&quot;FAQ&quot; src=&quot;https://www.satselixia.no/globalassets/corporate/sats-foretag-vara-produkter.jpg&quot;&gt;
+                        &lt;div class=&quot;image-overlay&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;panel-header&quot;&gt;
+                            &lt;h2 class=&quot;h3 &quot;&gt;FAQ&lt;/h2&gt;
+                            &lt;p&gt;›Svar på vanlige spørsmål.&lt;/p&gt;
+                                &lt;div class=&quot;button-container&quot;&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-xs-6&quot;&gt;
+                                                &lt;a class=&quot;btn btn-default btn-sm btn-block&quot; role=&quot;button&quot; href=&quot;/bedrift/faq/&quot;&gt;Les mer&lt;/a&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;container text-center&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-lg btn-primary&quot; autocomplete=&quot;off&quot;&gt;
+                Vis mer
+                &lt;span class=&quot;badge&quot;&gt;5&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-compontents-Cards-news-html" class="sg-h2 sg-title">Cards news</h2><a class="sg-hash-link" href="#sg-markup-compontents-Cards-news-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-example"><div class="no-touchevents">
+        <div class="row row-flex row-flex-wrap">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="panel-card-container">
+                    <div class="panel panel-default panel-card news-card">
+                        <a class="colorInherit" href="/nyheter/nyheter/na-lanseres-buildn-burn-i-oslo/">
+                            <div class="panel-heading">
+                                <img alt="Nå lanseres Build'n Burn i Oslo" src="https://www.satselixia.no//globalassets/traning/buildn-burn/bnb_product_image700x394.jpg">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="panel-footer">
+                                <p class="category ">Nyhet</p>
+                                <h3>Nå lanseres Build'n Burn i Oslo</h3>
+                                <p >Den 27. februar lanserer vi vårt nye treningskonsept Build'n Burn på flere sentre i Oslo. Er du klar til å «snap into shape»?</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 col-md-3">
+                <div class="panel-card-container">
+                    <div class="panel panel-default panel-card news-card">
+                        <a class="colorInherit" href="/nyheter/nyheter/vi-lanserer-fleksible-medlemskap/">
+                            <div class="panel-heading">
+                                <img alt="Vi lanserer fleksible medlemskap!" src="https://www.satselixia.no//globalassets/bli-medlem/sett_sammen700x394.jpg">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="panel-footer">
+                                <p class="category">Nyhet</p>
+                                <h3>Vi lanserer fleksible medlemskap!</h3>
+                                <p>Fra februar kan du som medlem sette sammen et medlemskap bestående kun av de delene du ønsker å bruke.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 col-md-3">
+                <div class="panel-card-container">
+                    <div class="panel panel-default panel-card news-card">
+                        <a class="colorInherit" href="/nyheter/nyheter/sats-elixia-soker-flere-kompetente-pt-er-og-instruktorer/">
+                            <div class="panel-heading">
+                                <img alt="SATS ELIXIA søker flere kompetente PT-er og instruktører" src="https://www.satselixia.no/globalassets/traning/personlig-traning/pt_kombo_60-30.jpg">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="panel-footer">
+                                <p class="category">Nyhet</p>
+                                <h3>SATS ELIXIA søker flere kompetente PT-er og instruktører</h3>
+                                <p>For å kunne møte denne økte bruken av produktene våre, søker vi i dag etter morgendagens PT-er og instruktører over hele Norge.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;no-touchevents&quot;&gt;
+        &lt;div class=&quot;row row-flex row-flex-wrap&quot;&gt;
+            &lt;div class=&quot;col-sm-12 col-md-6 col-lg-6&quot;&gt;
+                &lt;div class=&quot;panel-card-container&quot;&gt;
+                    &lt;div class=&quot;panel panel-default panel-card news-card&quot;&gt;
+                        &lt;a class=&quot;colorInherit&quot; href=&quot;/nyheter/nyheter/na-lanseres-buildn-burn-i-oslo/&quot;&gt;
+                            &lt;div class=&quot;panel-heading&quot;&gt;
+                                &lt;img alt=&quot;Nå lanseres Build'n Burn i Oslo&quot; src=&quot;https://www.satselixia.no//globalassets/traning/buildn-burn/bnb_product_image700x394.jpg&quot;&gt;
+                                &lt;div class=&quot;image-overlay&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;panel-footer&quot;&gt;
+                                &lt;p class=&quot;category &quot;&gt;Nyhet&lt;/p&gt;
+                                &lt;h3&gt;Nå lanseres Build'n Burn i Oslo&lt;/h3&gt;
+                                &lt;p &gt;Den 27. februar lanserer vi vårt nye treningskonsept Build'n Burn på flere sentre i Oslo. Er du klar til å «snap into shape»?&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-6 col-lg-3 col-md-3&quot;&gt;
+                &lt;div class=&quot;panel-card-container&quot;&gt;
+                    &lt;div class=&quot;panel panel-default panel-card news-card&quot;&gt;
+                        &lt;a class=&quot;colorInherit&quot; href=&quot;/nyheter/nyheter/vi-lanserer-fleksible-medlemskap/&quot;&gt;
+                            &lt;div class=&quot;panel-heading&quot;&gt;
+                                &lt;img alt=&quot;Vi lanserer fleksible medlemskap!&quot; src=&quot;https://www.satselixia.no//globalassets/bli-medlem/sett_sammen700x394.jpg&quot;&gt;
+                                &lt;div class=&quot;image-overlay&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;panel-footer&quot;&gt;
+                                &lt;p class=&quot;category&quot;&gt;Nyhet&lt;/p&gt;
+                                &lt;h3&gt;Vi lanserer fleksible medlemskap!&lt;/h3&gt;
+                                &lt;p&gt;Fra februar kan du som medlem sette sammen et medlemskap bestående kun av de delene du ønsker å bruke.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-6 col-lg-3 col-md-3&quot;&gt;
+                &lt;div class=&quot;panel-card-container&quot;&gt;
+                    &lt;div class=&quot;panel panel-default panel-card news-card&quot;&gt;
+                        &lt;a class=&quot;colorInherit&quot; href=&quot;/nyheter/nyheter/sats-elixia-soker-flere-kompetente-pt-er-og-instruktorer/&quot;&gt;
+                            &lt;div class=&quot;panel-heading&quot;&gt;
+                                &lt;img alt=&quot;SATS ELIXIA søker flere kompetente PT-er og instruktører&quot; src=&quot;https://www.satselixia.no/globalassets/traning/personlig-traning/pt_kombo_60-30.jpg&quot;&gt;
+                                &lt;div class=&quot;image-overlay&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;panel-footer&quot;&gt;
+                                &lt;p class=&quot;category&quot;&gt;Nyhet&lt;/p&gt;
+                                &lt;h3&gt;SATS ELIXIA søker flere kompetente PT-er og instruktører&lt;/h3&gt;
+                                &lt;p&gt;For å kunne møte denne økte bruken av produktene våre, søker vi i dag etter morgendagens PT-er og instruktører over hele Norge.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-compontents-breadcrumbs-html" class="sg-h2 sg-title">breadcrumbs</h2><a class="sg-hash-link" href="#sg-markup-compontents-breadcrumbs-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><ol class="breadcrumb">
+                <li class="start-page">
+                    <a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+                </li>
+                        <li class="visible-xs-inline">
+                            <a href="/treningssentre/">Treningssentre</a>
+                        </li>
+                    <li class="hidden-xs-inline">
+                        <a href="/treningssentre/">Treningssentre</a>
+                    </li>
+                        <li class="visible-xs-inline">
+                            <a>(...)</a>
+                        </li>
+                    <li class="hidden-xs-inline">
+                        <a href="/treningssentre/oslo/">Oslo</a>
+                    </li>
+                <li>
+                    Akersgata SATS
+                </li>
+    </ol></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;ol class=&quot;breadcrumb&quot;&gt;
+                &lt;li class=&quot;start-page&quot;&gt;
+                    &lt;a href=&quot;/&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-home&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;/li&gt;
+                        &lt;li class=&quot;visible-xs-inline&quot;&gt;
+                            &lt;a href=&quot;/treningssentre/&quot;&gt;Treningssentre&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;li class=&quot;hidden-xs-inline&quot;&gt;
+                        &lt;a href=&quot;/treningssentre/&quot;&gt;Treningssentre&lt;/a&gt;
+                    &lt;/li&gt;
+                        &lt;li class=&quot;visible-xs-inline&quot;&gt;
+                            &lt;a&gt;(...)&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;li class=&quot;hidden-xs-inline&quot;&gt;
+                        &lt;a href=&quot;/treningssentre/oslo/&quot;&gt;Oslo&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;li&gt;
+                    Akersgata SATS
+                &lt;/li&gt;
+    &lt;/ol&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-compontents-button-list-html" class="sg-h2 sg-title">button list</h2><a class="sg-hash-link" href="#sg-markup-compontents-button-list-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-example"><div class="filter-container text-center">
+<a class="btn btn-lg btn-primary" href="#">Stor Oslo (inkl. Drammen)</a>
+<a class="btn btn-lg btn-primary" href="#">Bergen</a>
+<a class="btn btn-lg btn-primary" href="#">Grenland</a>
+<a class="btn btn-lg btn-primary" href="#">Kristiansand</a>
+<a class="btn btn-lg btn-primary" href="#">Rogaland</a>
+<a class="btn btn-lg btn-primary" href="#">Tromsø</a>
+<a class="btn btn-lg btn-primary" href="#">Hønefoss</a>
+<a class="btn btn-lg btn-primary" href="#">Lillehammer</a>
+<a class="btn btn-lg btn-primary" href="#">Østfold</a>
+</div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;filter-container text-center&quot;&gt;
+&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot;&gt;Stor Oslo (inkl. Drammen)&lt;/a&gt;
+&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot;&gt;Bergen&lt;/a&gt;
+&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot;&gt;Grenland&lt;/a&gt;
+&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot;&gt;Kristiansand&lt;/a&gt;
+&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot;&gt;Rogaland&lt;/a&gt;
+&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot;&gt;Tromsø&lt;/a&gt;
+&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot;&gt;Hønefoss&lt;/a&gt;
+&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot;&gt;Lillehammer&lt;/a&gt;
+&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot;&gt;Østfold&lt;/a&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-compontents-collapse-html" class="sg-h2 sg-title">collapse</h2><a class="sg-hash-link" href="#sg-markup-compontents-collapse-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>To get proper styling wrap panel group in <code>.customer-service</code>.</p></div></div><div class="sg-sub-section sg-example"><div class="customer-service">
+	<div class="panel-group" role="tablist" aria-multiselectable="true">
+       <div class="panel panel-default panel-faq">
+            <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse-9763" aria-expanded="true" aria-controls="collapse-9763" class="collapsed">
+                        <span class="sats-icon-collapse plus-minus"></span>
+                        <span class="sats-icon-expand plus-minus"></span>
+                        <span class="question-text">Collapse title</span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse-9763" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Collapse content here. This is text that is good. We allways put text that is good here. Good, good and good.</p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default panel-faq">
+            <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse-9764" aria-expanded="true" aria-controls="collapse-9764" class="collapsed">
+                        <span class="sats-icon-collapse plus-minus"></span>
+                        <span class="sats-icon-expand plus-minus"></span>
+                        <span class="question-text">Another collapse title</span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse-9764" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Some other collapse content here. This is text that is good. We allways put text that is good here. Good, good and good.</p>
+                </div>
+            </div>
+        </div>
+	</div>
+</div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;customer-service&quot;&gt;
+	&lt;div class=&quot;panel-group&quot; role=&quot;tablist&quot; aria-multiselectable=&quot;true&quot;&gt;
+       &lt;div class=&quot;panel panel-default panel-faq&quot;&gt;
+            &lt;div class=&quot;panel-heading&quot; role=&quot;tab&quot;&gt;
+                &lt;h4 class=&quot;panel-title&quot;&gt;
+                    &lt;a data-toggle=&quot;collapse&quot; href=&quot;#collapse-9763&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;collapse-9763&quot; class=&quot;collapsed&quot;&gt;
+                        &lt;span class=&quot;sats-icon-collapse plus-minus&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;sats-icon-expand plus-minus&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;question-text&quot;&gt;Collapse title&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;collapse-9763&quot; class=&quot;panel-collapse collapse&quot;&gt;
+                &lt;div class=&quot;panel-body&quot;&gt;
+                    &lt;p&gt;Collapse content here. This is text that is good. We allways put text that is good here. Good, good and good.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;panel panel-default panel-faq&quot;&gt;
+            &lt;div class=&quot;panel-heading&quot; role=&quot;tab&quot;&gt;
+                &lt;h4 class=&quot;panel-title&quot;&gt;
+                    &lt;a data-toggle=&quot;collapse&quot; href=&quot;#collapse-9764&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;collapse-9764&quot; class=&quot;collapsed&quot;&gt;
+                        &lt;span class=&quot;sats-icon-collapse plus-minus&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;sats-icon-expand plus-minus&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;question-text&quot;&gt;Another collapse title&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;collapse-9764&quot; class=&quot;panel-collapse collapse&quot;&gt;
+                &lt;div class=&quot;panel-body&quot;&gt;
+                    &lt;p&gt;Some other collapse content here. This is text that is good. We allways put text that is good here. Good, good and good.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-compontents-hero-html" class="sg-h2 sg-title">hero</h2><a class="sg-hash-link" href="#sg-markup-compontents-hero-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-example"><h3>Hero with text and button</h3>
+<div id="firstHero">
+        <header>
+            
+
+<div class="hero-unit">
+
+        <div class="hero-container">
+                <div class="vertical-center hidden-xs">
+                        <h1>SATS Akersgata</h1>
+                        <button class="btn btn-default">Button</button>
+
+
+                </div>
+
+        </div>
+
+    <div class="hero-image" fade-image="" style="opacity: 1;">
+            <img src="https://www.satselixia.no/globalassets/traningscenter/centerbilder/sats/prformance/prformance5.jpg">
+
+    </div>
+
+
+</div>
+
+<div class="visible-xs">
+            <div class="mobile-header-and-buttons">
+                <div class="container">
+                        <h1>Heading</h1>
+                        <button class="btn btn-primary">Button</button>
+
+
+                </div>
+            </div>
+</div>
+
+<script id="video_" type="text/template">
+    
+</script>
+
+    
+        </header>
+    </div>
+
+    <h3>Hero carousel</h3>
+    <div id="firstHero">
+        <header>
+            
+        <div class="startPageHero">
+            <div><div class="block carouselheroblock  ">
+<div id="carousel-container" sats-carousel="" carousel-id="carousel">
+    <div class="carousel-container">
+
+        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+
+                    <li data-target="#carousel" data-slide-to="0" class="" ng-non-bindable=""></li>
+                    <li data-target="#carousel" data-slide-to="1" class="active" ng-non-bindable=""></li>
+                    <li data-target="#carousel" data-slide-to="2" class="" ng-non-bindable=""></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                    <div class="item" data-index="0">
+                        <div class="fill" style="background-image: url(https://www.satselixia.no//globalassets/hero-start/2000x907_q12016.jpg)">
+                                <div class="hero-container">
+                                        <div class="vertical-center left hidden-xs" ng-class="">
+                                                <h2 class="h1">Nyhet! Betal for det du bruker</h2>
+
+
+        <a class="btn btn-default" href="https://www.satselixia.no//bli-medlem/sett-sammen-ditt-eget-medlemskap2/" title="Les mer">Les mer</a>
+        <a class="btn btn-primary" href="https://www.satselixia.no//bli-medlem/" title="Bli medlem">Bli medlem</a>
+
+                                        </div>
+
+                                </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="item active" data-index="1">
+                        <div class="fill" style="background-image: url(https://www.satselixia.no//globalassets/traning/buildn-burn/bnb_hero_start_2000x907.jpg)">
+                                <div class="hero-container">
+                                        <div class="vertical-center left hidden-xs" ng-class="">
+                                                <h2 class="h1">Nyhet! 27. februar lanseres Build'n Burn i Oslo</h2>
+
+
+        <a class="btn btn-default" href="https://www.satselixia.no//trening/unike-treningskonsepter/buildn-burn/" title="Les mer">Les mer</a>
+
+                                        </div>
+
+                                </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="item " data-index="2">
+                        <div class="fill" style="background-image: url(https://www.satselixia.no//globalassets/traning/hiyoga/hiyoga_hero_ny2000x907.jpg)">
+                                <div class="hero-container">
+                                        <div class="vertical-center left hidden-xs" ng-class="">
+                                                <h2 class="h1">Nyhet! Nå lanseres HiYoga på Karlsrud &amp; Schous plass</h2>
+
+
+        <a class="btn btn-default" href="https://www.satselixia.no//trening/unike-treningskonsepter/hiyoga/">Les mer</a>
+
+                                        </div>
+
+                                </div>
+
+
+
+                        </div>
+                    </div>
+                    
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev" ng-non-bindable="">
+                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next" ng-non-bindable="">
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+        <div class="extraContentArea hidden" data-index="0">
+                    <div class="mobile-header-and-buttons">
+                        <div class="container">
+                                <h2 class="h1">Nyhet! Betal for det du bruker</h2>
+
+
+        <a class="btn btn-default" href="/bli-medlem/sett-sammen-ditt-eget-medlemskap2/" title="Les mer">Les mer</a>
+        <a class="btn btn-primary" href="/bli-medlem/" title="Bli medlem">Bli medlem</a>
+
+                        </div>
+                    </div>
+        </div>
+        <div class="extraContentArea visible-xs" data-index="1">
+                    <div class="mobile-header-and-buttons">
+                        <div class="container">
+                                <h2 class="h1">Nyhet! 27. februar lanseres Build'n Burn i Oslo</h2>
+
+
+        <a class="btn btn-default" href="/trening/unike-treningskonsepter/buildn-burn/" title="Les mer">Les mer</a>
+
+                        </div>
+                    </div>
+        </div>
+        <div class="hidden extraContentArea" data-index="2">
+                    <div class="mobile-header-and-buttons">
+                        <div class="container">
+                                <h2 class="h1">Nyhet! Nå lanseres HiYoga på Karlsrud &amp; Schous plass</h2>
+
+
+        <a class="btn btn-default" href="/trening/unike-treningskonsepter/hiyoga/">Les mer</a>
+
+                        </div>
+                    </div>
+        </div>
+        <div class="hidden extraContentArea" data-index="3">
+                    <div class="mobile-header-and-buttons">
+                        <div class="container">
+                                <h2 class="h1">Blogg &amp; inspirasjon</h2>
+
+
+        <a class="btn btn-default" href="/inspirasjon-trening/" title="Bli inspirert">Bli inspirert</a>
+
+                        </div>
+                    </div>
+        </div>
+</div></div></div>
+        </div>
+    
+        </header>
+    </div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;h3&gt;Hero with text and button&lt;/h3&gt;
+&lt;div id=&quot;firstHero&quot;&gt;
+        &lt;header&gt;
+            
+
+&lt;div class=&quot;hero-unit&quot;&gt;
+
+        &lt;div class=&quot;hero-container&quot;&gt;
+                &lt;div class=&quot;vertical-center hidden-xs&quot;&gt;
+                        &lt;h1&gt;SATS Akersgata&lt;/h1&gt;
+                        &lt;button class=&quot;btn btn-default&quot;&gt;Button&lt;/button&gt;
+
+
+                &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;div class=&quot;hero-image&quot; fade-image=&quot;&quot; style=&quot;opacity: 1;&quot;&gt;
+            &lt;img src=&quot;https://www.satselixia.no/globalassets/traningscenter/centerbilder/sats/prformance/prformance5.jpg&quot;&gt;
+
+    &lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;div class=&quot;visible-xs&quot;&gt;
+            &lt;div class=&quot;mobile-header-and-buttons&quot;&gt;
+                &lt;div class=&quot;container&quot;&gt;
+                        &lt;h1&gt;Heading&lt;/h1&gt;
+                        &lt;button class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;
+
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script id=&quot;video_&quot; type=&quot;text/template&quot;&gt;
+    
+&lt;/script&gt;
+
+    
+        &lt;/header&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;Hero carousel&lt;/h3&gt;
+    &lt;div id=&quot;firstHero&quot;&gt;
+        &lt;header&gt;
+            
+        &lt;div class=&quot;startPageHero&quot;&gt;
+            &lt;div&gt;&lt;div class=&quot;block carouselheroblock  &quot;&gt;
+&lt;div id=&quot;carousel-container&quot; sats-carousel=&quot;&quot; carousel-id=&quot;carousel&quot;&gt;
+    &lt;div class=&quot;carousel-container&quot;&gt;
+
+        &lt;div id=&quot;carousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot; data-interval=&quot;4000&quot;&gt;
+            &lt;!-- Indicators --&gt;
+            &lt;ol class=&quot;carousel-indicators&quot;&gt;
+
+                    &lt;li data-target=&quot;#carousel&quot; data-slide-to=&quot;0&quot; class=&quot;&quot; ng-non-bindable=&quot;&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#carousel&quot; data-slide-to=&quot;1&quot; class=&quot;active&quot; ng-non-bindable=&quot;&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#carousel&quot; data-slide-to=&quot;2&quot; class=&quot;&quot; ng-non-bindable=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;/ol&gt;
+
+            &lt;!-- Wrapper for slides --&gt;
+            &lt;div class=&quot;carousel-inner&quot; role=&quot;listbox&quot;&gt;
+                    &lt;div class=&quot;item&quot; data-index=&quot;0&quot;&gt;
+                        &lt;div class=&quot;fill&quot; style=&quot;background-image: url(https://www.satselixia.no//globalassets/hero-start/2000x907_q12016.jpg)&quot;&gt;
+                                &lt;div class=&quot;hero-container&quot;&gt;
+                                        &lt;div class=&quot;vertical-center left hidden-xs&quot; ng-class=&quot;&quot;&gt;
+                                                &lt;h2 class=&quot;h1&quot;&gt;Nyhet! Betal for det du bruker&lt;/h2&gt;
+
+
+        &lt;a class=&quot;btn btn-default&quot; href=&quot;https://www.satselixia.no//bli-medlem/sett-sammen-ditt-eget-medlemskap2/&quot; title=&quot;Les mer&quot;&gt;Les mer&lt;/a&gt;
+        &lt;a class=&quot;btn btn-primary&quot; href=&quot;https://www.satselixia.no//bli-medlem/&quot; title=&quot;Bli medlem&quot;&gt;Bli medlem&lt;/a&gt;
+
+                                        &lt;/div&gt;
+
+                                &lt;/div&gt;
+
+
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;item active&quot; data-index=&quot;1&quot;&gt;
+                        &lt;div class=&quot;fill&quot; style=&quot;background-image: url(https://www.satselixia.no//globalassets/traning/buildn-burn/bnb_hero_start_2000x907.jpg)&quot;&gt;
+                                &lt;div class=&quot;hero-container&quot;&gt;
+                                        &lt;div class=&quot;vertical-center left hidden-xs&quot; ng-class=&quot;&quot;&gt;
+                                                &lt;h2 class=&quot;h1&quot;&gt;Nyhet! 27. februar lanseres Build'n Burn i Oslo&lt;/h2&gt;
+
+
+        &lt;a class=&quot;btn btn-default&quot; href=&quot;https://www.satselixia.no//trening/unike-treningskonsepter/buildn-burn/&quot; title=&quot;Les mer&quot;&gt;Les mer&lt;/a&gt;
+
+                                        &lt;/div&gt;
+
+                                &lt;/div&gt;
+
+
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;item &quot; data-index=&quot;2&quot;&gt;
+                        &lt;div class=&quot;fill&quot; style=&quot;background-image: url(https://www.satselixia.no//globalassets/traning/hiyoga/hiyoga_hero_ny2000x907.jpg)&quot;&gt;
+                                &lt;div class=&quot;hero-container&quot;&gt;
+                                        &lt;div class=&quot;vertical-center left hidden-xs&quot; ng-class=&quot;&quot;&gt;
+                                                &lt;h2 class=&quot;h1&quot;&gt;Nyhet! Nå lanseres HiYoga på Karlsrud &amp;amp; Schous plass&lt;/h2&gt;
+
+
+        &lt;a class=&quot;btn btn-default&quot; href=&quot;https://www.satselixia.no//trening/unike-treningskonsepter/hiyoga/&quot;&gt;Les mer&lt;/a&gt;
+
+                                        &lt;/div&gt;
+
+                                &lt;/div&gt;
+
+
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+            &lt;/div&gt;
+
+            &lt;!-- Left and right controls --&gt;
+            &lt;a class=&quot;left carousel-control&quot; href=&quot;#carousel&quot; role=&quot;button&quot; data-slide=&quot;prev&quot; ng-non-bindable=&quot;&quot;&gt;
+                &lt;span class=&quot;glyphicon glyphicon-menu-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a class=&quot;right carousel-control&quot; href=&quot;#carousel&quot; role=&quot;button&quot; data-slide=&quot;next&quot; ng-non-bindable=&quot;&quot;&gt;
+                &lt;span class=&quot;glyphicon glyphicon-menu-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+        &lt;div class=&quot;extraContentArea hidden&quot; data-index=&quot;0&quot;&gt;
+                    &lt;div class=&quot;mobile-header-and-buttons&quot;&gt;
+                        &lt;div class=&quot;container&quot;&gt;
+                                &lt;h2 class=&quot;h1&quot;&gt;Nyhet! Betal for det du bruker&lt;/h2&gt;
+
+
+        &lt;a class=&quot;btn btn-default&quot; href=&quot;/bli-medlem/sett-sammen-ditt-eget-medlemskap2/&quot; title=&quot;Les mer&quot;&gt;Les mer&lt;/a&gt;
+        &lt;a class=&quot;btn btn-primary&quot; href=&quot;/bli-medlem/&quot; title=&quot;Bli medlem&quot;&gt;Bli medlem&lt;/a&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;extraContentArea visible-xs&quot; data-index=&quot;1&quot;&gt;
+                    &lt;div class=&quot;mobile-header-and-buttons&quot;&gt;
+                        &lt;div class=&quot;container&quot;&gt;
+                                &lt;h2 class=&quot;h1&quot;&gt;Nyhet! 27. februar lanseres Build'n Burn i Oslo&lt;/h2&gt;
+
+
+        &lt;a class=&quot;btn btn-default&quot; href=&quot;/trening/unike-treningskonsepter/buildn-burn/&quot; title=&quot;Les mer&quot;&gt;Les mer&lt;/a&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;hidden extraContentArea&quot; data-index=&quot;2&quot;&gt;
+                    &lt;div class=&quot;mobile-header-and-buttons&quot;&gt;
+                        &lt;div class=&quot;container&quot;&gt;
+                                &lt;h2 class=&quot;h1&quot;&gt;Nyhet! Nå lanseres HiYoga på Karlsrud &amp;amp; Schous plass&lt;/h2&gt;
+
+
+        &lt;a class=&quot;btn btn-default&quot; href=&quot;/trening/unike-treningskonsepter/hiyoga/&quot;&gt;Les mer&lt;/a&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;hidden extraContentArea&quot; data-index=&quot;3&quot;&gt;
+                    &lt;div class=&quot;mobile-header-and-buttons&quot;&gt;
+                        &lt;div class=&quot;container&quot;&gt;
+                                &lt;h2 class=&quot;h1&quot;&gt;Blogg &amp;amp; inspirasjon&lt;/h2&gt;
+
+
+        &lt;a class=&quot;btn btn-default&quot; href=&quot;/inspirasjon-trening/&quot; title=&quot;Bli inspirert&quot;&gt;Bli inspirert&lt;/a&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    
+        &lt;/header&gt;
+    &lt;/div&gt;</code></pre></div></div></div></div></div>      </div><!--/.sg-container-->
+    </div><!--/.sg-main-->
+  </div><!--/.sg-wrapper-->
+
+  <!--[if gt IE 8]><!--><script src="vendor/prism/prism.js"></script><!--<![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/sg-scripts.js"></script>
+  <script src="https://hfnstyle.herokuapp.com/bundles/js-external.js"></script>
+  <script src="https://hfnstyle.herokuapp.com/bundles/js-internal.js"></script>
+
+</body>
+</html>
+
