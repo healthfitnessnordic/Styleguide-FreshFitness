@@ -1,0 +1,1 @@
+Should use the react component. This is 'hacked' with jQuery to work to show style.

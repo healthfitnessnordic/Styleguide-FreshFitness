@@ -1,0 +1,1 @@
+Should use react-based custom component. This is for style/markup purposes.

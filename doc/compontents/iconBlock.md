@@ -1,0 +1,1 @@
+Can use `.iconBox--highlighted` class for special style.

@@ -80,7 +80,9 @@ body {
   opacity: 1;
   position: static;
 }
-
+.sg-header {
+  padding: 1rem;
+}
 @media screen and (min-width: 1025px) {
   .sg-sidebar,
   .js .sg-sidebar,
@@ -93,13 +95,16 @@ body {
     overflow-y: auto;
     position: fixed;
     top: 0;
-    width: 22rem;
+    width: 18rem;
   }
 
-  .sg-main, .sg-header {
+  .sg-main {
     margin-left: 20rem !important;
-    padding-left: 2rem !important;
     max-width: calc(100% - 20rem);
+  }
+  .sg-header {
+    margin-left: 18rem !important;
+    padding-left: 3.5rem;
   }
 }
 
@@ -107,8 +112,7 @@ body {
  Utility Classes
 ---------------------------------------------------------------------------- */
 .sg-container {
-  padding: 0 32px; /* For older browsers */
-  padding: 0 2rem;
+
 
 }
 
@@ -152,6 +156,12 @@ body {
   position: static;
   width: auto;
 }
+.ReactModalPortal {
+  display: none;
+}
+.sg-toggle {
+  display: block;
+}
 
 /* -------------------------------------------------------------------------
  Modules
@@ -181,6 +191,8 @@ body {
   line-height: 2;
   margin: 0;
   padding: 0;
+  font-family: "ClearSans";
+  text-transform: none;
 }
 
 .sg-logo-full {
@@ -198,11 +210,13 @@ body {
 
   .sg-logo-full {
     display: inline;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1;
     position: relative;
-    bottom: -1rem;
+    bottom: -0.75rem;
     font-weight: 300;
+    border-left: 2px solid white;
+    padding-left: 0.75rem;
   }
 }
 
@@ -291,6 +305,7 @@ body {
 .sg-h1 {
   padding-bottom: .2em;
   text-transform: capitalize;
+  border-bottom: 4px solid #ddd;
 }
 
 .sg-h2, .sg-h3 {
@@ -313,7 +328,6 @@ h1 + .sg-hash-link {
 .sg-title {
   padding-right: 2.5rem;
 }
-
 /* Buttons
 ---------------------------------------------------------------------------- */
 .sg-btn {
@@ -334,6 +348,7 @@ h1 + .sg-hash-link {
 .sg-btn--source,
 .sg-btn--select {
   display: none;
+  margin-right: 0.5rem;
 }
 
 /* Show specific buttons we cut the mustard */
@@ -411,7 +426,9 @@ h1 + .sg-hash-link {
 .sg-color-swatch {
   padding-top: 20%; /* Used to set height of color swatch */
 }
-
+.sg-color-grid-sm .sg-color-swatch {
+    padding-top: 10%; /* Used to set height of color swatch */
+  }
 .sg-color-name {
   font-size: 1.2em; /* Test this with 1.1 em */
   padding: .5em 0;
@@ -435,7 +452,10 @@ h1 + .sg-hash-link {
   }
 
   .sg-color-swatch {
-    padding-top: 60%; /* Used to set height of color swatch */
+    padding-top: 70%; /* Used to set height of color swatch */
+  }
+  .sg-color-grid-sm .sg-color-swatch {
+    padding-top: 30%; /* Used to set height of color swatch */
   }
  }
 
@@ -488,7 +508,7 @@ h1 + .sg-hash-link {
 /* Markup
 ---------------------------------------------------------------------------- */
 .sg-example {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 .sg-doc {
   border-top: 1px solid #ddd;
@@ -540,6 +560,7 @@ h1 + .sg-hash-link {
       -ms-transition: opacity 0.6s ease-out;
        -o-transition: opacity 0.6s ease-out;
           transition: opacity 0.6s ease-out;
+  display: none;
 }
 
 /* Show source code blocks when active or JS is not enabled */
@@ -547,6 +568,7 @@ h1 + .sg-hash-link {
   opacity: 1;
   position: relative;
   width: 100%;
+  display: block;
 }
 
 

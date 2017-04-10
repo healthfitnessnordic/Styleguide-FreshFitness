@@ -2,8 +2,10 @@ All buttons and links who should look like buttons should have the `.btn` class.
 
 `.btn-primary` for attention needy CTA buttons.
 
-`.btn-default` for other more functional buttons.
+`.btn-secondary` for other more functional buttons.
 
-------
+`.btn-tool` for function-based buttons. Preferably with supporting icon.
 
-`.btn-outline` is used mostly for [button lists](/#sg-markup-compontents-button-list-html) together with `.btn-default`.
+`.btn-link` for buttons who should look like links.
+
+`.btn-outline` is used over dark backgrounds and images.

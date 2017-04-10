@@ -1,0 +1,1 @@
+Two different markups based on whether user has had results in GX booking or not.

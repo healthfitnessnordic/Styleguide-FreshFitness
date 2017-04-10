@@ -1,3 +1,3 @@
-In order to give tables style they need at least the `.table` class.
+`.mobile-table` turns all td and tr into blocks. 
 
-Desktop and mobile version of `.booking-table` (separate markup) is visible/hidden in the respective screen sizes.
+`.booking-table` has unique responsiveness.
