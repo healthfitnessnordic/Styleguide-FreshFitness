@@ -1,0 +1,1 @@
+Can be used to add text, images and video (html-embed from Youtube) for instance.

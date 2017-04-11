@@ -61,7 +61,7 @@ body {
   padding-left: 0 1rem;
   padding-right: 16px; /* For older browsers */
   padding-right: 0 1rem;
-  padding-top: 3rem;
+  padding-top: 2.75rem;
 }
 
 .js .sg-sidebar {
@@ -176,7 +176,7 @@ body {
    font-weight: 500;
 }
 
-/* Grid
+/* Grid icons etc
 ---------------------------------------------------------------------------- */
 .sg-grid .col-md-4 div {
   padding: 0.5rem;
@@ -184,6 +184,15 @@ body {
 }
 .sg-grid .row {
   margin-bottom: 2rem;
+}
+.sg-icon-div span {
+  margin: 0.5rem;
+  width: 1rem;
+}
+.sg-special-icons.ff-icon {
+  background-size: 2.75rem 2.75rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 /* Branding
@@ -258,7 +267,7 @@ body {
 }
 
 .sg-nav-group li {
-  margin-bottom: .5em;
+  margin-bottom: .25em;
 }
 
 .sg-nav-group a,
@@ -344,6 +353,11 @@ h1 + .sg-hash-link {
 
 .sg-btn--top {
   float: right;
+  border-bottom: 2px solid #adadad;
+}
+.sg-btn--top:hover {
+  border-color: #007db8;
+  color: #007db8;
 }
 
 .sg-btn--source,
