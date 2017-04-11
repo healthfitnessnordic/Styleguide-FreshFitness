@@ -1,0 +1,1 @@
+Can also be used with `.col-lg-6` in stead.

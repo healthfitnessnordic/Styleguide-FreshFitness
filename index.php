@@ -32,14 +32,21 @@
         <li>
           <a href="#sg-fontStacks">Fonts</a>
         </li>
+        <li>
+          <a href="#sg-grid">Grid</a>
+        </li>
+        <li>
+          <a href="#sg-images">Images</a>
+        </li>
       </ul>
       <?php listFilesInFolder('markup'); ?>
     </div><!--/.sg-sidebar-->
 <div id="top" class="sg-header" role="banner">
     <div class="sg-container">
-      <h1 class="sg-logo"><img src="https://www.freshfitness.no/Images/FreshFitness/logo-no.svg" />
-        <span class="sg-logo-full">Style guide</span>
-      </h1>
+      <span class="sg-logo"><img src="https://www.freshfitness.no/Images/FreshFitness/logo-no.svg" />
+        
+      </span>
+
       <button type="button" class="sg-nav-toggle">Menu</button>
     </div>
   </div><!--/.sg-header-->
@@ -47,6 +54,7 @@
     
       <div class="sg-container">
         <div class="sg-info">
+          <h1 class="bottom-one">Fresh Fitness Style Guide</h1>
           <div class="sg-about sg-section">
             <h2 id="sg-about" class="sg-h2">Intro</h2>
             <p>Bootstrapped style guide for Fresh Fitness. More patterns and detailed documentation will come.</p>
@@ -140,6 +148,7 @@
                 <div class="sg-color-value">#F4F4F4</div>
               </div>
             </div><!--/.sg-color-grid-->
+             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
           </div><!--/.sg-colors-->
 
           <!-- Manually add your fonts here. -->
@@ -166,6 +175,29 @@
             </dl>
             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
           </div><!--/.sg-font-stacks-->
+
+          <div class="sg-grid sg-section">
+            <h2 id="sg-grid" class="sg-h2">Grid</h2>
+            <div class="row">
+              <div class="col-md-4"><div><code>.col-md-4</code></div></div>
+              <div class="col-md-4"><div><code>.col-md-4</code></div></div>
+              <div class="col-md-4"><div><code>.col-md-4</code></div></div>
+            </div>
+            <p>We use Bootstrap grid. <a href="https://getbootstrap.com/examples/grid/" target="_blank">Go here for documentation.</a></p>
+             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
+          </div>
+          <div class="sg-images sg-section">
+
+            <h2 id="sg-images" class="sg-h2">Images</h2>
+            <p>Document with <strong>recommended image formats</strong> found here.<br>
+              <a href="https://docs.google.com/spreadsheets/d/1uAV9KEme6ZWGopAlY3OQ2A-9IPrXT2W6BI1Yeqxj-Ys/edit?usp=sharing" target="_blank">https://docs.google.com/spreadsheets/d/1uAV9KEme6ZWGopAlY3OQ2A-9IPrXT2W6BI1Yeqxj-Ys/edit?usp=sharing</a>
+            </p>
+            <p>It's highly recommended to optimalize all images before they are used/published.<br>
+              For <strong>JPG/PNG</strong> use <a href="https://tinyjpg.com/" target="_blank">tinyjpg.</a><br>
+              For <strong>SVG</strong> use <a href="https://jakearchibald.github.io/svgomg/" target="_blank">svgomg.</a>
+            </p>
+             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
+          </div>
         </div><!--/.sg-info-->
 
         <?php renderFilesInFolder('markup'); ?>

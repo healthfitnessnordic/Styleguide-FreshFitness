@@ -25,15 +25,14 @@ body {
 }
 
 .sg-header {
-  background: #e5231b;
-  color: #fff;
-  padding-bottom: 2rem;
-  padding-top: 1.5rem;
+  background: #fff;
   margin-bottom: 2rem;
 }
 .sg-header img {
   width: auto;
-  height: 4rem;
+  background: #e5231b;
+  height: 5rem;
+  padding: 1rem;
   margin-right: 1rem;
 }
 
@@ -55,8 +54,8 @@ body {
 }
 
 .sg-sidebar {
-  background: #3d3d3d;
-  color: #fff;
+  background: #E2E2E2;
+  color: #404042;
   font-size: 80%;
   padding-left: 16px; /* For older browsers */
   padding-left: 0 1rem;
@@ -79,9 +78,6 @@ body {
 .js.nav-is-active .sg-sidebar {
   opacity: 1;
   position: static;
-}
-.sg-header {
-  padding: 1rem;
 }
 @media screen and (min-width: 1025px) {
   .sg-sidebar,
@@ -111,10 +107,7 @@ body {
 /* -------------------------------------------------------------------------
  Utility Classes
 ---------------------------------------------------------------------------- */
-.sg-container {
 
-
-}
 
 .sg-container:before,
 .sg-container:after,
@@ -183,6 +176,16 @@ body {
    font-weight: 500;
 }
 
+/* Grid
+---------------------------------------------------------------------------- */
+.sg-grid .col-md-4 div {
+  padding: 0.5rem;
+  background: #e2e2e2;
+}
+.sg-grid .row {
+  margin-bottom: 2rem;
+}
+
 /* Branding
 ---------------------------------------------------------------------------- */
 .sg-logo {
@@ -197,6 +200,7 @@ body {
 
 .sg-logo-full {
   display: none;
+  font-size: 2.313rem;
 }
 
 .sg-logo em {
@@ -208,15 +212,11 @@ body {
     display: none;
   }
 
-  .sg-logo-full {
+  .h1.sg-logo-full {
     display: inline;
-    font-size: 2rem;
-    line-height: 1;
     position: relative;
-    bottom: -0.75rem;
-    font-weight: 300;
-    border-left: 2px solid white;
-    padding-left: 0.75rem;
+    top: 1.125rem;
+    font-size: 2.313rem;
   }
 }
 
@@ -263,7 +263,7 @@ body {
 .sg-nav-group a,
 .sg-nav-group a:visited {
   border-left: 2px solid transparent;
-  color: #fff;
+  color: #404042;
   display: block;
   padding: .25em 0 .25em .5em;
   text-decoration: none;
@@ -279,9 +279,9 @@ body {
 }
 .sg-nav-group a:hover,
 .sg-nav-group a:focus {
-  background: #565656;
+
   border-left: 2px solid #939393;
-  color: #fff;
+
 }
 
 .sg-nav-group .sg-subnav-parent {
