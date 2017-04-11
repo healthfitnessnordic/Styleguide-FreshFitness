@@ -19,9 +19,6 @@
 </head>
 <body>
   <a href="#main" class="sg-visually-hidden sg-visually-hidden-focusable">Skip to main content</a>
-
-
-
   <div class="sg-wrapper sg-clearfix">
     <div id="nav" class="sg-sidebar" role="navigation">
       <h3 class="sg-h2 sg-subnav-title">General</h3>
@@ -36,7 +33,6 @@
           <a href="#sg-fontStacks">Fonts</a>
         </li>
       </ul>
-
       <?php listFilesInFolder('markup'); ?>
     </div><!--/.sg-sidebar-->
 <div id="top" class="sg-header" role="banner">

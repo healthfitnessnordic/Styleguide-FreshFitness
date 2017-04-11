@@ -10,12 +10,12 @@ img, svg, video, audio {
 
 @font-face {
   font-family: 'Icons';
-  src: url('../fonts/Icons/open-iconic.eot');
-  src: url('../fonts/Icons/open-iconic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Icons/open-iconic.woff2') format('woff2'),
-       url('../fonts/Icons/open-iconic.woff') format('woff'),
-       url('../fonts/Icons/open-iconic.ttf') format('truetype'),
-       url('../fonts/Icons/open-iconic.svg') format('svg');
+  src: url('../fonts/icons/open-iconic.eot');
+  src: url('../fonts/icons/open-iconic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/icons/open-iconic.woff2') format('woff2'),
+       url('../fonts/icons/open-iconic.woff') format('woff'),
+       url('../fonts/icons/open-iconic.ttf') format('truetype'),
+       url('../fonts/icons/open-iconic.svg') format('svg');
 }
 @font-face {
   font-family: 'stratos';
