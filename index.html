@@ -197,7 +197,8 @@
               <div class="col-md-4"><div><code>.col-md-4</code></div></div>
               <div class="col-md-4"><div><code>.col-md-4</code></div></div>
             </div>
-            <p>We use Bootstrap grid. <a href="https://getbootstrap.com/examples/grid/" target="_blank">Go here for documentation.</a></p>
+            <p>We use Bootstrap grid. <a href="https://getbootstrap.com/examples/grid/" target="_blank"><span class="oi oi-external-link small-text"></span> Go here for documentation.</a></p>
+            <p>For the block area grid, please read this <a href="" target="_blank"><span class="oi oi-file small-text"></span> PDF guide</a> if you want to understand how it works.</p>
              <div class="sg-markup-controls"><a class="sg-btn--top" href="#top"><span class="oi oi-arrow-top xsmall-text"></span> Back to Top</a></div>
           </div>
           <div class="sg-images sg-section">
@@ -2281,6 +2282,15 @@
 &lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-compontents-textBlock-html" class="sg-h2 sg-title">textBlock</h2><a class="sg-hash-link" href="#sg-markup-compontents-textBlock-html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><div class="sg-sub-section sg-example">
 <div class="row">
 	<div class="blockArea">
+	<div class="col-md-4 col-xs-6 textBlock textBlock-change">
+	    <div class="textBox textBox-change">
+	        <div class="textBox__inner">
+	            <div>
+	                <p>Block text that is cool</p>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 	<div class="col-md-4 col-xs-6 textBlock">
         <a href="/trening/gruppetrening/bodybalance/">
 		    <div class="textBox">
@@ -2292,63 +2302,27 @@
 		    </div>
         </a>
 	</div>
-	<div class="col-md-4 col-xs-6 textBlock">
-        <a href="/trening/gruppetrening/bodybalance/">
-		    <div class="textBox textBox--green">
-		        <div class="textBox__inner">
-		            <div>
-		                <p>Block text with a link</p>
-		            </div>
-		        </div>
-		    </div>
-        </a>
-	</div>
-	<div class="col-md-4 col-xs-6 textBlock">
-        <a href="/trening/gruppetrening/bodybalance/">
-		    <div class="textBox textBox--blue">
-		        <div class="textBox__inner">
-		            <div>
-		                <p>Block text with a link</p>
-		            </div>
-		        </div>
-		    </div>
-        </a>
+	<div class="col-xs-12">
+		<hr>
+		<button class="toggle-blue-text sg-btn sg-btn--source">Toggle blue class</button>
+		<button class="toggle-green-text sg-btn sg-btn--source">Toggle green class</button>
+		<button class="toggle-style-text sg-btn sg-btn--source">Toggle squared/circle class</button>
 	</div>
 </div>
-<hr class="top-two bottom-two">
-<div class="row">
-	<div class="col-md-4 col-xs-6 textBlock textBlock--circled">
-	    <div class="textBox textBox--circle">
-	        <div class="textBox__inner">
-	            <div>
-	                <p>This is short a text</p>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<div class="col-md-4 col-xs-6 textBlock textBlock--circled">
-	    <div class="textBox textBox--circle textBox--green">
-	        <div class="textBox__inner">
-	            <div>
-	                <p>This is short a text</p>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<div class="col-md-4 col-xs-6 textBlock textBlock--circled">
-	    <div class="textBox textBox--circle textBox--blue">
-	        <div class="textBox__inner">
-	            <div>
-	                <p>This is short a text</p>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-</div>
+
 </div></div><div class="sg-sub-section sg-doc"><div class="markdown-body"><p class="sg-doc-h h3">Documentation</p><p>Default is squared with red background. Can be linked (wrapped in <code>&lt;a&gt;&lt;/a&gt;</code>) or just plain text.</p>
 <p>Can have <code>--circled</code> class and <code>--green</code> and <code>--blue</code> color options.  </p></div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source"><span class="oi oi-code"></span> View Source</button><a class="sg-btn--top" href="#top"><span class="oi oi-arrow-top xsmall-text"></span> Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;blockArea&quot;&gt;
+	&lt;div class=&quot;col-md-4 col-xs-6 textBlock textBlock-change&quot;&gt;
+	    &lt;div class=&quot;textBox textBox-change&quot;&gt;
+	        &lt;div class=&quot;textBox__inner&quot;&gt;
+	            &lt;div&gt;
+	                &lt;p&gt;Block text that is cool&lt;/p&gt;
+	            &lt;/div&gt;
+	        &lt;/div&gt;
+	    &lt;/div&gt;
+	&lt;/div&gt;
 	&lt;div class=&quot;col-md-4 col-xs-6 textBlock&quot;&gt;
         &lt;a href=&quot;/trening/gruppetrening/bodybalance/&quot;&gt;
 		    &lt;div class=&quot;textBox&quot;&gt;
@@ -2360,59 +2334,14 @@
 		    &lt;/div&gt;
         &lt;/a&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;col-md-4 col-xs-6 textBlock&quot;&gt;
-        &lt;a href=&quot;/trening/gruppetrening/bodybalance/&quot;&gt;
-		    &lt;div class=&quot;textBox textBox--green&quot;&gt;
-		        &lt;div class=&quot;textBox__inner&quot;&gt;
-		            &lt;div&gt;
-		                &lt;p&gt;Block text with a link&lt;/p&gt;
-		            &lt;/div&gt;
-		        &lt;/div&gt;
-		    &lt;/div&gt;
-        &lt;/a&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col-md-4 col-xs-6 textBlock&quot;&gt;
-        &lt;a href=&quot;/trening/gruppetrening/bodybalance/&quot;&gt;
-		    &lt;div class=&quot;textBox textBox--blue&quot;&gt;
-		        &lt;div class=&quot;textBox__inner&quot;&gt;
-		            &lt;div&gt;
-		                &lt;p&gt;Block text with a link&lt;/p&gt;
-		            &lt;/div&gt;
-		        &lt;/div&gt;
-		    &lt;/div&gt;
-        &lt;/a&gt;
+	&lt;div class=&quot;col-xs-12&quot;&gt;
+		&lt;hr&gt;
+		&lt;button class=&quot;toggle-blue-text sg-btn sg-btn--source&quot;&gt;Toggle blue class&lt;/button&gt;
+		&lt;button class=&quot;toggle-green-text sg-btn sg-btn--source&quot;&gt;Toggle green class&lt;/button&gt;
+		&lt;button class=&quot;toggle-style-text sg-btn sg-btn--source&quot;&gt;Toggle squared/circle class&lt;/button&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;hr class=&quot;top-two bottom-two&quot;&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-md-4 col-xs-6 textBlock textBlock--circled&quot;&gt;
-	    &lt;div class=&quot;textBox textBox--circle&quot;&gt;
-	        &lt;div class=&quot;textBox__inner&quot;&gt;
-	            &lt;div&gt;
-	                &lt;p&gt;This is short a text&lt;/p&gt;
-	            &lt;/div&gt;
-	        &lt;/div&gt;
-	    &lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col-md-4 col-xs-6 textBlock textBlock--circled&quot;&gt;
-	    &lt;div class=&quot;textBox textBox--circle textBox--green&quot;&gt;
-	        &lt;div class=&quot;textBox__inner&quot;&gt;
-	            &lt;div&gt;
-	                &lt;p&gt;This is short a text&lt;/p&gt;
-	            &lt;/div&gt;
-	        &lt;/div&gt;
-	    &lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col-md-4 col-xs-6 textBlock textBlock--circled&quot;&gt;
-	    &lt;div class=&quot;textBox textBox--circle textBox--blue&quot;&gt;
-	        &lt;div class=&quot;textBox__inner&quot;&gt;
-	            &lt;div&gt;
-	                &lt;p&gt;This is short a text&lt;/p&gt;
-	            &lt;/div&gt;
-	        &lt;/div&gt;
-	    &lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
+
 &lt;/div&gt;</code></pre></div></div></div></div></div>      </div><!--/.sg-container-->
     </div><!--/.sg-main-->
   </div><!--/.sg-wrapper-->

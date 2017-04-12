@@ -199,7 +199,8 @@
               <div class="col-md-4"><div><code>.col-md-4</code></div></div>
               <div class="col-md-4"><div><code>.col-md-4</code></div></div>
             </div>
-            <p>We use Bootstrap grid. <a href="https://getbootstrap.com/examples/grid/" target="_blank">Go here for documentation.</a></p>
+            <p>We use Bootstrap grid. <a href="https://getbootstrap.com/examples/grid/" target="_blank"><span class="oi oi-external-link small-text"></span> Go here for documentation.</a></p>
+            <p>For the block area grid, please read this <a href="" target="_blank"><span class="oi oi-file small-text"></span> PDF guide</a> if you want to understand how it works.</p>
              <div class="sg-markup-controls"><a class="sg-btn--top" href="#top"><span class="oi oi-arrow-top xsmall-text"></span> Back to Top</a></div>
           </div>
           <div class="sg-images sg-section">
