@@ -62,6 +62,7 @@
             <h2 id="sg-about" class="sg-h2">Intro</h2>
             <p>Style guide for Fresh Fitness. Focused on elements and patterns that are used more than once, so header, footer and templates etc. are not included here.  If you have any questions contact <a href="mailto:svein.farstad@makingwaves.com"><span class="oi oi-envelope-closed small-text"></span> Svein Erik</a> at Making Waves.</p>
             <p>Variables <code>(less)</code> marked with prefix @. To view source code click the View source button below the elements.</p>
+            <p>A preliminary <a href="https://www.dropbox.com/s/vy20zq8ia0sgvz6/Fresh%20Fitness%20Styleguide.sketch?dl=0" target="_blank"><img class="sketch" src="http://static.hackingui.com.s3.amazonaws.com/2016/06/app-icon.png" alt="">Sketch style guide</a> and <a href="https://www.dropbox.com/sh/imbr8xvat7p0wsj/AAC90-tRTipaHJuo6DrT7VFfa?dl=0" target="_blank"><span class="oi oi-folder small-text"></span> PDFs</a> <i>(updated April 2017)</i> are available on Dropbox.</p>
            
           </div><!--/.sg-about-->
           <div class="sg-logos sg-section">
