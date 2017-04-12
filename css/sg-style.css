@@ -344,9 +344,6 @@ body {
   font-size: 1.5em;
 }
 
-.sg-about p {
-  font-size: 1.1em;
-}
 h1 + .sg-hash-link {
   display: none;
 }
