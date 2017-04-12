@@ -57,9 +57,9 @@
           <h1 class="bottom-one">Fresh Fitness Style Guide</h1>
           <div class="sg-about sg-section">
             <h2 id="sg-about" class="sg-h2">Intro</h2>
-            <p>Bootstrapped style guide for Fresh Fitness. More patterns and detailed documentation will come.</p>
-            <p>Variables (less) marked with prefix @. To view source code click the View source button below the elements.</p>
-            <p>If you have any questions contact Svein Erik at Making Waves.</p>
+            <p>Style guide for Fresh Fitness. Focused on elements and patterns that are used more than once, so header, footer and templates etc. are not included here.  If you have any questions contact <a href="mailto:svein.farstad@makingwaves.com"><span class="oi oi-envelope-closed small-text"></span> Svein Erik</a> at Making Waves.</p>
+            <p>Variables <code>(less)</code> marked with prefix @. To view source code click the View source button below the elements.</p>
+           
           </div><!--/.sg-about-->
 
           <!-- Manually add your UI colors here. -->
@@ -148,7 +148,7 @@
                 <div class="sg-color-value">#F4F4F4</div>
               </div>
             </div><!--/.sg-color-grid-->
-             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
+             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top"><span class="oi oi-arrow-top xsmall-text"></span> Back to Top</a></div>
           </div><!--/.sg-colors-->
 
           <!-- Manually add your fonts here. -->
@@ -173,7 +173,7 @@
               <dt>Heading Font Light Italic:</dt>
               <dd style='font-family: "stratos", sans-serif; font-weight: 300; font-style: italic'>"stratos", sans-serif;</dd>
             </dl>
-            <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
+            <div class="sg-markup-controls"><a class="sg-btn--top" href="#top"><span class="oi oi-arrow-top xsmall-text"></span> Back to Top</a></div>
           </div><!--/.sg-font-stacks-->
 
           <div class="sg-grid sg-section">
@@ -184,19 +184,19 @@
               <div class="col-md-4"><div><code>.col-md-4</code></div></div>
             </div>
             <p>We use Bootstrap grid. <a href="https://getbootstrap.com/examples/grid/" target="_blank">Go here for documentation.</a></p>
-             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
+             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top"><span class="oi oi-arrow-top xsmall-text"></span> Back to Top</a></div>
           </div>
           <div class="sg-images sg-section">
 
             <h2 id="sg-images" class="sg-h2">Images</h2>
             <p>Document with <strong>recommended image formats</strong> found here.<br>
-              <a href="https://docs.google.com/spreadsheets/d/1uAV9KEme6ZWGopAlY3OQ2A-9IPrXT2W6BI1Yeqxj-Ys/edit?usp=sharing" target="_blank">https://docs.google.com/spreadsheets/d/1uAV9KEme6ZWGopAlY3OQ2A-9IPrXT2W6BI1Yeqxj-Ys/edit?usp=sharing</a>
+              <a href="https://docs.google.com/spreadsheets/d/1uAV9KEme6ZWGopAlY3OQ2A-9IPrXT2W6BI1Yeqxj-Ys/edit?usp=sharing" target="_blank"><span class="oi oi-file small-text"></span> https://docs.google.com/spreadsheets/d/1uAV9KEme6ZWGopAlY3OQ2A-9IPrXT2W6BI1Yeqxj-Ys/edit?usp=sharing</a>
             </p>
             <p>It's highly recommended to optimalize all images before they are used/published.<br>
-              For <strong>JPG/PNG</strong> use <a href="https://tinyjpg.com/" target="_blank">tinyjpg.</a><br>
-              For <strong>SVG</strong> use <a href="https://jakearchibald.github.io/svgomg/" target="_blank">svgomg.</a>
+              For <strong>JPG/PNG</strong> use <a href="https://tinyjpg.com/" target="_blank"><span class="oi oi-external-link small-text"></span> tinyjpg.</a><br>
+              For <strong>SVG</strong> use <a href="https://jakearchibald.github.io/svgomg/" target="_blank"><span class="oi oi-external-link small-text"></span> svgomg.</a>
             </p>
-             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
+             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top"><span class="oi oi-arrow-top xsmall-text"></span> Back to Top</a></div>
           </div>
         </div><!--/.sg-info-->
 

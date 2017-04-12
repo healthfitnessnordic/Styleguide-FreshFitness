@@ -103,8 +103,8 @@
     if ($content != '') {
       echo '<div class="sg-sub-section">';
       echo '<div class="sg-markup-controls">';
-      echo '<button type="button" class="sg-btn sg-btn--source">View Source</button>';
-      echo '<a class="sg-btn--top" href="#top">Back to Top</a>';
+      echo '<button type="button" class="sg-btn sg-btn--source"><span class="oi oi-code"></span> View Source</button>';
+      echo '<a class="sg-btn--top" href="#top"><span class="oi oi-arrow-top xsmall-text"></span> Back to Top</a>';
       echo '</div>';
       echo '<div class="sg-source">';
       echo '<button type="button" class="sg-btn sg-btn--select">Copy Source</button>';
