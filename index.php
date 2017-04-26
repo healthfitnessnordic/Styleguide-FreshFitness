@@ -16,6 +16,8 @@
 
   <!-- prism Syntax Highlighting Styles -->
   <link rel="stylesheet" href="vendor/prism/prism.css">
+
+  <link rel="stylesheet" href="https://ffstyle.herokuapp.com/FreshFitness/Public/css/main.css">
 </head>
 <body>
   <a href="#main" class="sg-visually-hidden sg-visually-hidden-focusable">Skip to main content</a>
@@ -228,6 +230,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/sg-scripts.js"></script>
   <script src="js/temp.js"></script>
+
   <script src="js/modernizr-custom.js"></script>
  
 
